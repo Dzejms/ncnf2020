@@ -35,14 +35,17 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const socket = io();
-        // document.querySelector('button').addEventListener('click', function(e) {
-        //   e.preventDefault();
-        //   socket.emit('talkback', document.querySelector('#m').value);
-        //   document.querySelector('#m').value = '';
-        // });
-        // socket.on('message', function(msg) {
-        //   document.querySelector('#message').innerText = msg;
-        // });
+        document.querySelector('button').addEventListener('click', function(e) {
+          e.preventDefault();
+          socket.emit('talkback', document.querySelector('#m').value);
+          document.querySelector('#m').value = '';
+        });
+        socket.on('message', function(msg) {
+          document.querySelector('#message').innerText = msg;
+        });
+        socket.on('talkback', function(msg) {
+            document.querySelector('#message').innerText = msg;
+        });
       });
     </script>
   </body>
