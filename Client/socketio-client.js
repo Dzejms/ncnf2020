@@ -9,6 +9,18 @@ maxApi.addHandler('connect', (url) => {
     socket.on('talkback', (msg) => {
         maxApi.outlet('talkback', msg);
     });
+
+    socket.on('snap', () => {
+        maxApi.outlet('snap');
+    });
+
+    socket.on('crackle', () => {
+        maxApi.outlet('crackle');
+    });
+
+    socket.on('pop', () => {
+        maxApi.outlet('pop');
+    });
 });
 
 maxApi.addHandler('disconnect', () => {

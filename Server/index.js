@@ -17,6 +17,21 @@ io.on('connection', (socket) => {
         io.emit('message', msg);
     });
 
+    socket.on('snap', () => {
+        console.log('Snap received');
+        socket.broadcast.emit('snap');
+    });
+
+    socket.on('crackle', () => {
+        console.log('Crackle received');
+        socket.broadcast.emit('crackle');
+    });
+
+    socket.on('pop', () => {
+        console.log('Pop received');
+        socket.broadcast.emit('pop');
+    });
+
     socket.on('talkback', (msg) => {
         console.log('Talkback message received:', msg);
         socket.broadcast.emit('talkback', msg);
