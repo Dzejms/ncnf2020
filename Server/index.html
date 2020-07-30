@@ -25,6 +25,10 @@
       input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
       button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
       */
+      .ping {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -73,9 +77,32 @@
         socket.on('message', function(msg) {
           display.innerText = msg;
         });
+
         socket.on('talkback', function(msg) {
           display.innerText = msg;
         });
+
+        socket.on('snap', function() {
+          snapButton.classList.add('ping');
+          setTimeout(() => {
+            snapButton.classList.remove('ping');
+          }, 1000);
+        });
+
+        socket.on('crackle', function() {
+          crackleButton.classList.add('ping');
+          setTimeout(() => {
+            crackleButton.classList.remove('ping');
+          }, 1000);
+        });
+
+        socket.on('pop', function() {
+          popButton.classList.add('ping');
+          setTimeout(() => {
+            popButton.classList.remove('ping');
+          }, 1000);
+        });
+
       });
     </script>
   </body>
