@@ -39,6 +39,6 @@ io.on('connection', (socket) => {
 });
 
 
-http.listen(80, () => {
-    console.log('Server listening on port 80');
+http.listen(443, () => {
+    console.log('Server listening on port 443');
 });
