@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 82.0, 1546.0, 918.0 ],
+		"rect" : [ 41.0, 84.0, 1546.0, 918.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -641,7 +641,7 @@
 													}
 ,
 													"text" : "autopattr",
-													"varname" : "u630002276"
+													"varname" : "u582002135"
 												}
 
 											}
@@ -1009,7 +1009,7 @@
 										"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 									}
 ,
-									"patching_rect" : [ 599.236085678970312, 100.0, 137.0, 116.0 ],
+									"patching_rect" : [ 313.698487678970309, 256.966222763061523, 137.0, 116.0 ],
 									"varname" : "bp.LFO",
 									"viewvisibility" : 1
 								}
@@ -2709,6 +2709,7 @@
 																	"fontname" : "Ableton Sans Bold Regular",
 																	"fontsize" : 12.0,
 																	"id" : "obj-35",
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
@@ -2835,7 +2836,7 @@
 																"box" : 																{
 																	"code" : "delTime = int(in1);\r\nv = maximum(0,in1 -delTime);\r\nout2 = 0.539+v*(-1.037+0.369*v);\r\nout1 = delTime;",
 																	"fontface" : 0,
-																	"fontname" : "Lucida Console",
+																	"fontname" : "<Monospaced>",
 																	"fontsize" : 12.0,
 																	"id" : "obj-25",
 																	"maxclass" : "codebox",
@@ -2907,6 +2908,7 @@
 																	"fontname" : "Ableton Sans Bold Regular",
 																	"fontsize" : 12.0,
 																	"id" : "obj-20",
+																	"linecount" : 2,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
@@ -3296,7 +3298,7 @@
 													}
 ,
 													"text" : "autopattr",
-													"varname" : "u360002275"
+													"varname" : "u371002134"
 												}
 
 											}
@@ -3876,7 +3878,7 @@
 										"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 									}
 ,
-									"patching_rect" : [ 402.736085678970312, 259.966222763061523, 245.0, 116.0 ],
+									"patching_rect" : [ 50.000001678970307, 256.966222763061523, 245.0, 116.0 ],
 									"varname" : "bp.Ladder",
 									"viewvisibility" : 1
 								}
@@ -3954,7 +3956,7 @@
 													}
 ,
 													"text" : "autopattr",
-													"varname" : "u962002274"
+													"varname" : "u129002133"
 												}
 
 											}
@@ -4147,6 +4149,7 @@
 																	"fontname" : "Ableton Sans Bold Regular",
 																	"fontsize" : 10.0,
 																	"id" : "obj-8",
+																	"linecount" : 2,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
@@ -4949,7 +4952,7 @@
 																"box" : 																{
 																	"code" : "History hold_count(0), gate(0),rising(0), falling(1), x(0.),x_at_attack(0.), prev_velocity(0.), velocity(0.);\r\nHistory thresh(1.);\r\nHistory thresh_target(1.05);\r\nHistory scaler(1.);\r\nHistory clip_low(0.),clip_high(1.);\r\nParam analog(0.25);\r\nParam max_analog(2.);\r\n\r\nrelease_target = -0.05;\r\n\r\nvelocity = in1;\r\nattack = in2;\r\nhold = in3;\r\ndecay = in4;\r\n\r\na_coeff = 1.-(exp(-1. / ((max(mstosamps(attack),1.)/3.))));\r\nd_coeff = 1.-(exp(-1. / ((max(mstosamps(decay),3.)/3.))));\r\n\r\nhold_max_count = max(mstosamps(hold),4);\r\n\r\nif (prev_velocity != velocity && velocity != 0) {\r\n\tx_at_attack = x;\r\n\tthresh = min(max_analog,1. + (x_at_attack*analog));\r\n\tthresh_target = thresh*1.05;\r\n\trising = 1;\r\n\tscaler = velocity;\r\n\r\n\thold_count=0;\r\n}\r\n\r\nif (rising) {\r\n\tx += rising * a_coeff * (thresh_target - x);\r\n\trising = (x <= thresh);\r\n\tx = min(x,thresh);\t\t\r\n} else if (hold_count < hold_max_count) {\r\n\thold_count += 1;\r\n} else {\r\n\tx += d_coeff * (release_target - x);\r\n\tx = max(x,0.);\r\n}\r\n\r\nprev_velocity = velocity;\r\n\r\nout1 = x*scaler;",
 																	"fontface" : 0,
-																	"fontname" : "Lucida Console",
+																	"fontname" : "<Monospaced>",
 																	"fontsize" : 12.0,
 																	"id" : "obj-5",
 																	"maxclass" : "codebox",
@@ -5590,7 +5593,7 @@
 										"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 									}
 ,
-									"patching_rect" : [ 377.69851520243833, 100.0, 152.0, 116.0 ],
+									"patching_rect" : [ 553.69851520243833, 89.0, 152.0, 116.0 ],
 									"varname" : "bp.AHD[1]",
 									"viewvisibility" : 1
 								}
@@ -9059,7 +9062,7 @@
 													}
 ,
 													"text" : "autopattr",
-													"varname" : "u816002273"
+													"varname" : "u921002132"
 												}
 
 											}
@@ -9644,7 +9647,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 377.698487678970309, 39.999974763061573, 30.0, 30.0 ]
+									"patching_rect" : [ 553.698487678970309, 28.999974763061573, 30.0, 30.0 ]
 								}
 
 							}
@@ -9652,11 +9655,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-45",
-									"index" : 1,
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 377.698487678970309, 435.966222763061523, 30.0, 30.0 ]
+									"patching_rect" : [ 563.698487678970309, 424.966222763061523, 30.0, 30.0 ]
 								}
 
 							}
@@ -9664,11 +9667,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-46",
-									"index" : 2,
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 412.698487678970309, 435.966222763061523, 30.0, 30.0 ]
+									"patching_rect" : [ 337.698487678970309, 435.966222763061523, 30.0, 30.0 ]
 								}
 
 							}
@@ -10999,7 +11002,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u391002271"
+									"varname" : "u492002130"
 								}
 
 							}
@@ -11490,6 +11493,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -11727,14 +11732,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
+					"destination" : [ "obj-59", 1 ],
 					"source" : [ "obj-47", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 1 ],
+					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -11857,15 +11862,22 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "socket.io-client[1] - Copy.maxsnap",
+				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "socket.io-client[1].maxsnap",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../Users/james/OneDrive/Documents/Max 8/Snapshots",
+				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "socketio-client.js",
-				"bootpath" : "C:/code/repos/ncnf2020/Client",
+				"bootpath" : "D:/Code/repos/ncnf2020/Client",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -11970,54 +11982,30 @@
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"Attack" : 3519.685039370078357,
-									"Bypass" : 0.0,
-									"Bypass[1]" : 0.0,
-									"CV2" : 55.11811023622051,
-									"CV2[2]" : 0.0,
-									"CV3" : 0.0,
-									"DSP[1]" : 1.0,
-									"Decay" : 8910.309156231365705,
-									"Fatness" : 2.366431913239846,
-									"Feedback" : 63.779527559055097,
-									"Freq" : 5420.277968041966233,
-									"FreqMode" : 0.0,
-									"Freq[3]" : 3947.493914523081003,
-									"Frequency" : 18.236949830030269,
-									"Hold" : 6460.99150958280643,
-									"Invert" : 0.0,
-									"Level[1]" : -25.888369711440099,
-									"Linear" : 0.0,
-									"Mix" : 100.0,
-									"Mute" : 0.0,
-									"Mute[2]" : 0.0,
-									"Mute[3]" : 0.0,
-									"Offset" : -15.334708300995061,
-									"Offset[2]" : -37.291338582677113,
-									"OutputChannel[1]" : 0.0,
-									"Quadrants[1]" : 0.0,
-									"Response[1]" : 0.0,
-									"WaveformCloud" : 1.0,
-									"live.numbox" : 60.0,
-									"live.numbox[1]" : 62.0,
-									"live.numbox[2]" : 64.0,
-									"mute" : 0.0,
-									"TimeMode" : 1.0
-								}
-
-							}
-
-						}
-,
 						"fileref" : 						{
-							"name" : "socket.io-client[1]",
-							"filename" : "socket.io-client[1].maxsnap",
-							"filepath" : "~/OneDrive/Documents/Max 8/Snapshots",
+							"name" : "Patch 1",
+							"filename" : "socket.io-client[1] - Copy.maxsnap",
+							"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "d72e663d112d13280d592127ed6635a6"
+							"snapshotfileid" : "86fac6fadf320bc931f9fa6ed012de6a"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "Patch 1",
+						"origin" : "socket.io-client",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "Patch 1",
+							"filename" : "socket.io-client[1].maxsnap",
+							"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "d3801723f6f156cba20a3b97635fdb36"
 						}
 
 					}
