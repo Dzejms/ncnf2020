@@ -21,6 +21,10 @@ maxApi.addHandler('connect', (url) => {
     socket.on('pop', () => {
         maxApi.outlet('pop');
     });
+
+    socket.on('filter.frequency', (value) => {
+        maxApi.outlet('filter.frequency', value);
+    });
 });
 
 maxApi.addHandler('disconnect', () => {

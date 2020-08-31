@@ -32,7 +32,12 @@ io.on('connection', (socket) => {
         console.log('Pop received');
         socket.broadcast.emit('pop');
     });
-
+    
+    socket.on('filter.frequency', (value) => {
+        console.log('filter.frequency value Received');
+        socket.broadcast.emit('filter.frequency', value);
+    });
+    
     socket.on('talkback', (msg) => {
         console.log('Talkback message received:', msg);
         socket.broadcast.emit('talkback', msg);

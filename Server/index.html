@@ -40,6 +40,7 @@
       <button id="crackle">Crackle</button>
       <button id="pop">Pop</button>
       <input type="text" id="messagebox"/><button id="send">Send</button>
+      <input type="range" id="filterFrequency" min="0" max="127" step="1" />
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
@@ -50,6 +51,7 @@
         const popButton = document.querySelector('#pop');
         const sendButton = document.querySelector('#send');
         const messageBox = document.querySelector('#messagebox');
+        const filterFrequencySlider = document.querySelector("#filterFrequency");
         const display = document.querySelector('#display');
 
         sendButton.addEventListener('click', function(e) {
@@ -72,6 +74,11 @@
           e.preventDefault();
           socket.emit('pop');
           messageBox.value = '';
+        });
+
+        filterFrequencySlider.addEventListener("input", function(e) {
+          e.preventDefault();
+          socket.emit('filter.frequency', filterFrequencySlider.value);
         });
 
         socket.on('message', function(msg) {
