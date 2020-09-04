@@ -22,8 +22,20 @@ maxApi.addHandler('connect', (url) => {
         maxApi.outlet('pop');
     });
 
-    socket.on('filter.frequency', (value) => {
-        maxApi.outlet('filter.frequency', value);
+    socket.on('video1', (value) => {
+        maxApi.outlet('video1', value);
+    });
+
+    socket.on('video2', (value) => {
+        maxApi.outlet('video2', value);
+    });
+
+    socket.on('video3', (value) => {
+        maxApi.outlet('video3', value);
+    });
+
+    socket.on('video4', (value) => {
+        maxApi.outlet('video4', value);
     });
 });
 

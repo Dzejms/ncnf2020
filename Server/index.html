@@ -22,9 +22,18 @@
       }
       /*
       .form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-      input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
       button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
       */
+      label {
+        display: block;
+      }
+      input { 
+        padding: 10px; 
+        /*width: 90%; */
+        margin-right: .5%; 
+        display: block;
+      }
+      
       .ping {
         background-color: black;
         color: white;
@@ -36,11 +45,11 @@
       <div id="display"></div>
     </div>
     <div class="form">
-      <button id="snap">Snap</button>
-      <button id="crackle">Crackle</button>
-      <button id="pop">Pop</button>
-      <input type="text" id="messagebox"/><button id="send">Send</button>
-      <input type="range" id="filterFrequency" min="0" max="127" step="1" />
+      <label for="messagebox">Message</label><input type="text" id="messagebox"/><button id="send">Send</button>
+      <label for="videoSlider1">Video 1</label><input type="range" id="videoSlider1" min="0" max="127" step="1" />
+      <label for="videoSlider2">Video 2</label><input type="range" id="videoSlider2" min="0" max="127" step="1" />
+      <label for="videoSlider3">Video 3</label><input type="range" id="videoSlider3" min="0" max="127" step="1" />
+      <label for="videoSlider4">Video 4</label><input type="range" id="videoSlider4" min="0" max="127" step="1" />
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
@@ -51,7 +60,10 @@
         const popButton = document.querySelector('#pop');
         const sendButton = document.querySelector('#send');
         const messageBox = document.querySelector('#messagebox');
-        const filterFrequencySlider = document.querySelector("#filterFrequency");
+        const videoSlider1 = document.querySelector("#videoSlider1");
+        const videoSlider2 = document.querySelector("#videoSlider2");
+        const videoSlider3 = document.querySelector("#videoSlider3");
+        const videoSlider4 = document.querySelector("#videoSlider4");
         const display = document.querySelector('#display');
 
         sendButton.addEventListener('click', function(e) {
@@ -60,25 +72,24 @@
           messageBox.value = '';
         });
         
-        snapButton.addEventListener('click', function(e) {
+        videoSlider1.addEventListener("input", function(e) {
           e.preventDefault();
-          socket.emit('snap');
+          socket.emit('video1', videoSlider1.value);
         });
 
-        crackleButton.addEventListener('click', function(e) {
+        videoSlider2.addEventListener("input", function(e) {
           e.preventDefault();
-          socket.emit('crackle');
+          socket.emit('video2', videoSlider2.value);
         });
 
-        popButton.addEventListener('click', function(e) {
+        videoSlider3.addEventListener("input", function(e) {
           e.preventDefault();
-          socket.emit('pop');
-          messageBox.value = '';
+          socket.emit('video3', videoSlider3.value);
         });
 
-        filterFrequencySlider.addEventListener("input", function(e) {
+        videoSlider4.addEventListener("input", function(e) {
           e.preventDefault();
-          socket.emit('filter.frequency', filterFrequencySlider.value);
+          socket.emit('video4', videoSlider4.value);
         });
 
         socket.on('message', function(msg) {
@@ -87,6 +98,22 @@
 
         socket.on('talkback', function(msg) {
           display.innerText = msg;
+        });
+
+        socket.on('video1', function(val) {
+          videoSlider1.value = val;
+        });
+
+        socket.on('video2', function(val) {
+          videoSlider2.value = val;
+        });
+
+        socket.on('video3', function(val) {
+          videoSlider3.value = val;
+        });
+
+        socket.on('video4', function(val) {
+          videoSlider4.value = val;
         });
 
         socket.on('snap', function() {

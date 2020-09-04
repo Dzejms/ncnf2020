@@ -33,13 +33,28 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('pop');
     });
     
-    socket.on('filter.frequency', (value) => {
-        console.log('filter.frequency value Received');
-        socket.broadcast.emit('filter.frequency', value);
+    socket.on('video1', (value) => {
+        console.log('video1', value);
+        socket.broadcast.emit('video1', value);
+    });
+    
+    socket.on('video2', (value) => {
+        console.log('video2', value);
+        socket.broadcast.emit('video2', value);
+    });
+    
+    socket.on('video3', (value) => {
+        console.log('video3', value);
+        socket.broadcast.emit('video3', value);
+    });
+    
+    socket.on('video4', (value) => {
+        console.log('video4', value);
+        socket.broadcast.emit('video4', value);
     });
     
     socket.on('talkback', (msg) => {
-        console.log('Talkback message received:', msg);
+        console.log('Talkback', msg);
         socket.broadcast.emit('talkback', msg);
     });
 });
