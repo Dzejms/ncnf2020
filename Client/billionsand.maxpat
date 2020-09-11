@@ -40,6 +40,699 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-152",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1212.0, 457.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-151",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1290.0, 478.059703707695007, 96.0, 22.0 ],
+					"text" : "prepend append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-148",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1290.0, 414.0, 29.5, 22.0 ],
+					"text" : "13"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-146",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1290.0, 445.0, 40.0, 22.0 ],
+					"text" : "itoa"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-133",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1613.0, 445.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-131",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1478.0, 429.0, 65.0, 36.0 ],
+					"text" : "append $1 \r"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-129",
+					"linecount" : 5,
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1541.0, 485.0, 252.0, 176.5 ],
+					"separator" : "newlinespace",
+					"text" : "asdf\rNew\rfinally\rwhy\rasdf\r"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.421714518204807,
+					"id" : "obj-128",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 498.0, 1000.0, 170.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 483.701553652692382, 995.471910112359524, 50.0, 22.0 ],
+					"text" : "Master"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-126",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 504.5, 553.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 497.951553652692382, 552.0, 43.0, 20.0 ],
+					"text" : "Space"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-125",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 395.0, 544.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 402.5, 552.0, 35.0, 20.0 ],
+					"text" : "Grit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-118",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 725.629318992296703, 1340.94776439666748, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.01. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-119",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 810.955859795216838, 1312.161162734031677, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[8]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Main",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Main",
+					"varname" : "live.toggle[6]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-120",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 765.521186818687511, 1312.161162734031677, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[7]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[6]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-121",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 725.629318992296703, 1368.559703707695007, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[6]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[12]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-122",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 717.548544238019304, 1237.780566573143005, 161.417927742004736, 66.0 ],
+					"text" : "jk.pushrotary 9 @dial9 r @dial9 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Main @textoff Main"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 758.629318992296703, 1368.559703707695007, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "Main",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.01,
+							"parameter_shortname" : "Main",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[13]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-112",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 537.574604153633118, 1340.94776439666748, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.01. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-113",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 622.901144956553253, 1312.161162734031677, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[7]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Distortion",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Distortion",
+					"varname" : "live.toggle[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-114",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 577.466471980023925, 1312.161162734031677, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[6]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-115",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 537.574604153633118, 1368.559703707695007, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[5]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[10]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-116",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 529.493829399355718, 1237.780566573143005, 161.417927742004622, 66.0 ],
+					"text" : "jk.pushrotary 8 @dial8 r @dial8 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Distortion @textoff Distortion"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 570.574604153633118, 1368.559703707695007, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "Distortion",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.01,
+							"parameter_shortname" : "Distortion",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[11]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-111",
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 408.0, 1529.797225220672772, 22.0, 82.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 409.0, 581.50418221950531, 22.0, 82.0 ],
+					"size" : 1.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-104",
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 601.0, 1529.797225220672772, 22.0, 82.0 ],
+					"size" : 1.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-107",
+					"maxclass" : "number~",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 601.0, 1627.0, 56.0, 22.0 ],
+					"sig" : 0.720412503343527
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-108",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 574.0, 1687.76504647731781, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-101",
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 507.451553652692382, 1529.797225220672772, 22.0, 82.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 508.451553652692382, 581.50418221950531, 22.0, 82.0 ],
+					"size" : 1.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-102",
+					"maxclass" : "number~",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 505.0, 1627.0, 56.0, 22.0 ],
+					"sig" : 0.541119574050598
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 478.0, 1687.76504647731781, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-100",
+					"maxclass" : "number~",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 408.0, 1627.0, 56.0, 22.0 ],
+					"sig" : 0.01
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 381.0, 1687.76504647731781, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autosave" : 1,
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 8,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+					"patching_rect" : [ 118.0, 1103.543021440505981, 324.85074520111084, 298.0 ],
+					"save" : [ "#N", "vst~", "loaduniqueid", 0, "iZotope Trash 2.vstinfo", ";" ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "vst~",
+							"parameter_shortname" : "vst~",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 1,
+						"parameter_mappable" : 0
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "vst~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"pluginname" : "iZotope Trash 2.vstinfo",
+							"plugindisplayname" : "iZotope Trash 2",
+							"pluginsavedname" : "",
+							"pluginsaveduniqueid" : 0,
+							"version" : 1,
+							"isbank" : 0,
+							"isbase64" : 1,
+							"sliderorder" : [  ],
+							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+							"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "iZotope Trash 2",
+									"origin" : "iZotope Trash 2.vstinfo",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"snapshot" : 									{
+										"pluginname" : "iZotope Trash 2.vstinfo",
+										"plugindisplayname" : "iZotope Trash 2",
+										"pluginsavedname" : "",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"sliderorder" : [  ],
+										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+										"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+									}
+,
+									"fileref" : 									{
+										"name" : "iZotope Trash 2",
+										"filename" : "iZotope Trash 2.maxsnap",
+										"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "352350e4f40b7a8cfff395000c5a3465"
+									}
+
+								}
+ ]
+						}
+
+					}
+,
+					"text" : "vst~ \"iZotope Trash 2.vstinfo\"",
+					"varname" : "vst~",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 834.0, 648.0, 63.0, 22.0 ],
+					"text" : "density $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 834.0, 616.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 972.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 701.966471980023925, 659.0, 65.0, 22.0 ],
+					"text" : "getparams"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -54,7 +747,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 582.0, 1034.0, 201.0, 116.0 ],
+					"patching_rect" : [ 926.0, 995.0, 201.0, 116.0 ],
 					"varname" : "bp.Audio Mixer[2]",
 					"viewvisibility" : 1
 				}
@@ -75,7 +768,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 642.5, 733.70148503780365, 446.0, 196.0 ],
+					"patching_rect" : [ 799.5, 723.0, 446.0, 196.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -109,16 +802,16 @@
 									"active_left" : 1.0,
 									"active_right" : 1.0,
 									"density" : 100.0,
-									"grain_range" : 1476.999999999999773,
-									"grain_size" : 1651.000000000000909,
+									"grain_range" : 349.0,
+									"grain_size" : 5643.999999999998181,
 									"min_amp" : 127.0,
 									"playback_speed" : 3.150291338582679,
-									"playback_speed_range" : 10.0,
-									"pulse_offset" : 1000.0,
+									"playback_speed_range" : 2.755905511811034,
+									"pulse_offset" : 12.834645669291984,
 									"pulse_range" : 686.204724409448431,
 									"randomize" : 0.0,
 									"range" : 127.0,
-									"wet_dry" : 100.0
+									"wet_dry" : 81.102362204724329
 								}
 
 							}
@@ -144,16 +837,16 @@
 												"active_left" : 1.0,
 												"active_right" : 1.0,
 												"density" : 100.0,
-												"grain_range" : 1476.999999999999773,
-												"grain_size" : 1651.000000000000909,
+												"grain_range" : 349.0,
+												"grain_size" : 5643.999999999998181,
 												"min_amp" : 127.0,
 												"playback_speed" : 3.150291338582679,
-												"playback_speed_range" : 10.0,
-												"pulse_offset" : 1000.0,
+												"playback_speed_range" : 2.755905511811034,
+												"pulse_offset" : 12.834645669291984,
 												"pulse_range" : 686.204724409448431,
 												"randomize" : 0.0,
 												"range" : 127.0,
-												"wet_dry" : 100.0
+												"wet_dry" : 81.102362204724329
 											}
 
 										}
@@ -176,154 +869,6 @@
 ,
 					"text" : "amxd~ Granular-to-go.amxd",
 					"varname" : "amxd~[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
-					"id" : "obj-106",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Audio Mixer.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 349.0, 1319.0, 201.0, 116.0 ],
-					"varname" : "bp.Audio Mixer[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-105",
-					"lockeddragscroll" : 0,
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 752.0, 1275.0, 427.0, 196.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "amxd~",
-							"parameter_shortname" : "amxd~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"patchername" : "WasteBand.amxd",
-						"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband/WasteBand.amxd"
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "max~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"name" : "WasteBand.amxd",
-							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband/WasteBand.amxd",
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"Hi_L" : -11.105238999999999,
-									"Hi_R" : -7.387072653168218,
-									"Low-Mid_L" : 3606.080077999999958,
-									"Low-Mid_R" : 1886.719970999999987,
-									"Low_L" : -8.705186767445639,
-									"Low_R" : -14.867383999999999,
-									"Mid-Hi_L" : 1504.640014999999948,
-									"Mid-Hi_R" : 5134.399902000000111,
-									"Mid_L" : -22.657240000000002,
-									"Mid_R" : -20.413225244011144,
-									"hiOD_L" : 28.799999,
-									"hiOD_R" : -22.399999999999999,
-									"loOD_L" : 73.599997999999999,
-									"loOD_R" : 72.0,
-									"midOD_L" : -41.599997999999999,
-									"midOD_R" : 30.399999999999999
-								}
-
-							}
-
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "WasteBand.amxd",
-									"origin" : "WasteBand.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "WasteBand.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband/WasteBand.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Hi_L" : -11.105238999999999,
-												"Hi_R" : -7.387072653168218,
-												"Low-Mid_L" : 3606.080077999999958,
-												"Low-Mid_R" : 1886.719970999999987,
-												"Low_L" : -8.705186767445639,
-												"Low_R" : -14.867383999999999,
-												"Mid-Hi_L" : 1504.640014999999948,
-												"Mid-Hi_R" : 5134.399902000000111,
-												"Mid_L" : -22.657240000000002,
-												"Mid_R" : -20.413225244011144,
-												"hiOD_L" : 28.799999,
-												"hiOD_R" : -22.399999999999999,
-												"loOD_L" : 73.599997999999999,
-												"loOD_R" : 72.0,
-												"midOD_L" : -41.599997999999999,
-												"midOD_R" : 30.399999999999999
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "WasteBand.amxd",
-										"filename" : "WasteBand.amxd.maxsnap",
-										"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "20a59b6ed0f116c13b263484e067d426"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "amxd~ WasteBand.amxd",
-					"varname" : "amxd~",
 					"viewvisibility" : 1
 				}
 
@@ -361,35 +906,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.46268630027771, 527.497306227684021, 94.0, 22.0 ],
 					"text" : "scale 0. 1. -1. 1."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 58.46268630027771, 450.0, 41.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 519.059685826301575, 944.956319152607648, 41.0, 48.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ -0.566929133858267 ],
-							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Speed[2]",
-							"parameter_mmax" : 1.0,
-							"parameter_mmin" : -1.0,
-							"parameter_shortname" : "Speed",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"varname" : "live.dial[9]"
 				}
 
 			}
@@ -4544,7 +5060,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 519.0, 68.0, 82.0, 22.0 ],
-													"text" : "9"
+													"text" : "90"
 												}
 
 											}
@@ -6312,8 +6828,6 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 720.074604153633118, 425.059703707695007, 41.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 264.121216416358948, 730.956319152607648, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
@@ -6507,8 +7021,6 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 504.059685826301575, 425.059703707695007, 41.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 214.059685826301575, 730.956319152607648, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
@@ -6566,8 +7078,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 268.074618458747864, 397.44776439666748, 140.0, 22.0 ],
-					"text" : "scale 1. 127. 0.10. 1000."
+					"patching_rect" : [ 268.074618458747864, 397.44776439666748, 133.0, 22.0 ],
+					"text" : "scale 1. 127. 0.10. 500."
 				}
 
 			}
@@ -6702,14 +7214,12 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 301.074618458747864, 425.059703707695007, 41.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 164.180851817131042, 730.956319152607648, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Time[1]",
-							"parameter_mmax" : 10000.0,
+							"parameter_mmax" : 500.0,
 							"parameter_mmin" : 0.1,
 							"parameter_shortname" : "Time",
 							"parameter_type" : 0,
@@ -6770,7 +7280,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1122.164162397384644, 967.020633220672607, 187.0, 116.0 ],
+					"patching_rect" : [ 1319.804111455881866, 1034.085107684135437, 187.0, 116.0 ],
 					"varname" : "bp.Chorus",
 					"viewvisibility" : 1
 				}
@@ -6807,7 +7317,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2131.0, 102.878793954849243, 49.0, 20.0 ],
+					"patching_rect" : [ 2144.0, 102.878793954849243, 49.0, 20.0 ],
 					"text" : "Video 4"
 				}
 
@@ -6819,7 +7329,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2131.0, 45.878793954849243, 71.0, 22.0 ],
+					"patching_rect" : [ 2144.0, 45.878793954849243, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -6832,7 +7342,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2131.0, 129.214069724082947, 97.0, 24.0 ]
+					"patching_rect" : [ 2144.0, 129.214069724082947, 97.0, 24.0 ]
 				}
 
 			}
@@ -6843,7 +7353,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2131.0, 170.335275769233704, 97.0, 22.0 ],
+					"patching_rect" : [ 2144.0, 170.335275769233704, 97.0, 22.0 ],
 					"text" : "scale 0 127 0. 1."
 				}
 
@@ -6894,8 +7404,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2021.0, 170.335275769233704, 97.0, 22.0 ],
-					"text" : "scale 0 127 0. 1."
+					"patching_rect" : [ 2021.0, 170.335275769233704, 110.0, 22.0 ],
+					"text" : "scale 0 127 0.2 0.7"
 				}
 
 			}
@@ -6917,7 +7427,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1798.0, 102.878793954849243, 49.0, 20.0 ],
+					"patching_rect" : [ 1788.0, 102.878793954849243, 49.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 19.0, 49.0, 20.0 ],
 					"text" : "Video 1"
@@ -6956,7 +7466,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1800.0, 45.878793954849243, 71.0, 22.0 ],
+					"patching_rect" : [ 1790.0, 45.878793954849243, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -7101,7 +7611,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 574.0, 180.0, 48.0, 23.0 ],
-									"restore" : [ 0.889763779527559 ],
+									"restore" : [ 0.78740157480315 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -9972,7 +10482,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 542.0, 194.928955000000002, 64.0, 23.0 ],
-									"restore" : [ 97.637795275590548 ],
+									"restore" : [ 36.220472440944881 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -13256,7 +13766,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 599.0, 159.0, 76.0, 23.0 ],
-									"restore" : [ 0.145669291338583 ],
+									"restore" : [ 0.5 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -13461,7 +13971,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 464.5, 159.0, 75.0, 23.0 ],
-									"restore" : [ 0.251968503937008 ],
+									"restore" : [ 0.8 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -14629,7 +15139,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1358.164162397384644, 739.93552553653717, 245.0, 116.0 ],
+					"patching_rect" : [ 1298.164162397384644, 745.0, 245.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 435.50418221950531, 245.0, 116.0 ],
 					"varname" : "bp.Comb Filter",
@@ -14653,15 +15163,14 @@
 				"box" : 				{
 					"fontsize" : 72.0,
 					"id" : "obj-50",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1209.5, 303.0, 353.0, 174.0 ],
+					"patching_rect" : [ 1209.5, 303.0, 656.0, 91.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 772.0, 1022.335275769233704, 1181.0, 91.0 ],
-					"text" : "this is awesome"
+					"text" : "asdf asdf"
 				}
 
 			}
@@ -14746,8 +15255,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -14776,8 +15283,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1910.0, 170.335275769233704, 103.0, 22.0 ],
-					"text" : "scale 0 127 0. 0.5"
+					"patching_rect" : [ 1903.5, 170.335275769233704, 110.0, 22.0 ],
+					"text" : "scale 0 127 0.3 0.9"
 				}
 
 			}
@@ -14788,8 +15295,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1798.0, 170.335275769233704, 103.0, 22.0 ],
-					"text" : "scale 0 127 0. 0.8"
+					"patching_rect" : [ 1788.0, 170.335275769233704, 110.0, 22.0 ],
+					"text" : "scale 0 127 0.3 0.9"
 				}
 
 			}
@@ -14801,7 +15308,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1798.0, 129.214069724082947, 97.0, 24.0 ],
+					"patching_rect" : [ 1788.0, 129.214069724082947, 97.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 45.335275769233704, 97.0, 24.0 ]
 				}
@@ -15019,7 +15526,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-36",
-					"items" : [ "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "2- Studio 26c MIDI In", ",", "Max EqParametric4.amxd" ],
+					"items" : [ "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "2- Studio 26c MIDI In", ",", "Granular-to-go.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -15033,7 +15540,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-2",
-					"items" : [ "Microsoft GS Wavetable Synth", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "2- Studio 26c MIDI Out", ",", "Max EqParametric4.amxd" ],
+					"items" : [ "Microsoft GS Wavetable Synth", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "2- Studio 26c MIDI Out", ",", "Granular-to-go.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -20527,12 +21034,12 @@
 										"Size" : [ 0.1 ],
 										"Spread" : [ 76.377952755905525 ],
 										"Tail" : [ 0.194881889763779 ],
-										"Time" : [ 206.34920634920627 ],
+										"Time" : [ 0.1 ],
 										"bypass" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u223001810"
+									"varname" : "u362007871"
 								}
 
 							}
@@ -20901,7 +21408,7 @@
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 					}
 ,
-					"patching_rect" : [ 1065.664162397384644, 1103.543021440505981, 332.0, 116.0 ],
+					"patching_rect" : [ 1247.304111455881866, 1194.607495903968811, 332.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 808.956319152607648, 332.0, 116.0 ],
 					"varname" : "bp.Gigaverb",
@@ -20954,7 +21461,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1575.164162397384644, 1696.297225220672772, 45.0, 45.0 ]
+					"patching_rect" : [ 1575.164162397384644, 1696.297225220672772, 45.0, 45.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 486.451553652692382, 1164.367454512588665, 45.0, 45.0 ]
 				}
 
 			}
@@ -20967,7 +21476,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1586.664162397384644, 1529.76504647731781, 22.0, 140.0 ]
+					"patching_rect" : [ 1586.664162397384644, 1529.76504647731781, 22.0, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 486.451553652692382, 1026.835275769233704, 44.5, 131.0 ]
 				}
 
 			}
@@ -21833,7 +22344,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u441001809"
+									"varname" : "u247007870"
 								}
 
 							}
@@ -22134,7 +22645,7 @@
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 					}
 ,
-					"patching_rect" : [ 1122.164162397384644, 833.93552553653717, 190.0, 116.0 ],
+					"patching_rect" : [ 1331.164162397384644, 875.0, 190.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 564.50418221950531, 190.0, 116.0 ],
 					"varname" : "bp.Flanger",
@@ -22175,15 +22686,50 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-106", 1 ],
-					"source" : [ "obj-105", 0 ]
+					"destination" : [ "obj-96", 1 ],
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 1 ],
+					"source" : [ "obj-102", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-106", 0 ]
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-108", 1 ],
+					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-108", 0 ]
 				}
 
 			}
@@ -22203,8 +22749,81 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-109", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"order" : 0,
+					"source" : [ "obj-115", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
+					"midpoints" : [ 547.074604153633118, 1410.914892315864563, 510.160496066022461, 1410.914892315864563, 510.160496066022461, 1305.914892315864563, 538.993829399355718, 1305.914892315864563 ],
+					"order" : 1,
+					"source" : [ "obj-115", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
+					"source" : [ "obj-116", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-114", 0 ],
+					"source" : [ "obj-116", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-115", 0 ],
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-111", 0 ],
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-118", 0 ]
 				}
 
 			}
@@ -22213,6 +22832,65 @@
 					"destination" : [ "obj-18", 0 ],
 					"midpoints" : [ 970.304111455881866, 506.059703707695007, 980.804111455881866, 506.059703707695007, 980.804111455881866, 419.059703707695007, 970.304111455881866, 419.059703707695007 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-118", 0 ],
+					"order" : 0,
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"midpoints" : [ 735.129318992296703, 1410.914892315864563, 698.215210904686046, 1410.914892315864563, 698.215210904686046, 1305.914892315864563, 727.048544238019304, 1305.914892315864563 ],
+					"order" : 1,
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-119", 0 ],
+					"source" : [ "obj-122", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 0 ],
+					"source" : [ "obj-122", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-129", 0 ],
+					"source" : [ "obj-131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-129", 0 ],
+					"source" : [ "obj-133", 0 ]
 				}
 
 			}
@@ -22242,8 +22920,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-151", 0 ],
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-131", 0 ],
+					"source" : [ "obj-151", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-148", 0 ],
+					"source" : [ "obj-152", 0 ]
 				}
 
 			}
@@ -22286,32 +22992,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"order" : 0,
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-106", 0 ],
-					"order" : 1,
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-106", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -22328,6 +23016,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -22781,7 +23483,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-131", 0 ],
+					"order" : 1,
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 1 ],
+					"order" : 0,
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -22830,8 +23541,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 2 ],
+					"destination" : [ "obj-68", 3 ],
+					"order" : 0,
 					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 1 ],
+					"order" : 1,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-88", 0 ]
 				}
 
 			}
@@ -22868,7 +23595,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-93", 2 ]
 				}
 
@@ -22876,6 +23603,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
+					"order" : 2,
+					"source" : [ "obj-93", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"order" : 1,
+					"source" : [ "obj-93", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
 					"order" : 1,
 					"source" : [ "obj-93", 1 ]
 				}
@@ -22912,20 +23655,30 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-99", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-105" : [ "amxd~", "amxd~", 0 ],
-			"obj-106::obj-29" : [ "3[1]", "3", 0 ],
-			"obj-106::obj-32" : [ "2[1]", "2", 0 ],
-			"obj-106::obj-33" : [ "4[1]", "4", 0 ],
-			"obj-106::obj-37" : [ "Mute[1]", "Mute", 0 ],
-			"obj-106::obj-39" : [ "1[5]", "1", 0 ],
-			"obj-106::obj-49" : [ "MuteCh1[1]", "MuteCh1", 0 ],
-			"obj-106::obj-58" : [ "MuteCh2[1]", "MuteCh2", 0 ],
-			"obj-106::obj-64" : [ "MuteCh3[1]", "MuteCh3", 0 ],
-			"obj-106::obj-70" : [ "MuteCh4[1]", "MuteCh4", 0 ],
 			"obj-109" : [ "amxd~[1]", "amxd~[1]", 0 ],
-			"obj-11" : [ "Speed[2]", "Speed", 0 ],
 			"obj-110::obj-29" : [ "3", "3", 0 ],
 			"obj-110::obj-32" : [ "2", "2", 0 ],
 			"obj-110::obj-33" : [ "4", "4", 0 ],
@@ -22935,7 +23688,15 @@
 			"obj-110::obj-58" : [ "MuteCh2", "MuteCh2", 0 ],
 			"obj-110::obj-64" : [ "MuteCh3", "MuteCh3", 0 ],
 			"obj-110::obj-70" : [ "MuteCh4", "MuteCh4", 0 ],
+			"obj-113" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-114" : [ "live.button[6]", "live.button", 0 ],
+			"obj-115" : [ "1[5]", "1", 0 ],
+			"obj-117" : [ "Distortion", "Distortion", 0 ],
+			"obj-119" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-12" : [ "live.text", "live.text", 0 ],
+			"obj-120" : [ "live.button[7]", "live.button", 0 ],
+			"obj-121" : [ "1[6]", "1", 0 ],
+			"obj-123" : [ "Main", "Main", 0 ],
 			"obj-142" : [ "live.button[2]", "live.button", 0 ],
 			"obj-143" : [ "1", "1", 0 ],
 			"obj-155" : [ "live.toggle[3]", "live.toggle", 0 ],
@@ -22949,6 +23710,7 @@
 			"obj-19::obj-64" : [ "Tail", "Tail", 0 ],
 			"obj-19::obj-65" : [ "Spread", "Spread", 0 ],
 			"obj-19::obj-66" : [ "Time", "Time", 0 ],
+			"obj-22" : [ "vst~", "vst~", 0 ],
 			"obj-27::obj-1" : [ "Depth", "Depth", 0 ],
 			"obj-27::obj-2" : [ "Rate[1]", "Rate", 0 ],
 			"obj-27::obj-23" : [ "bypass[1]", "bypass", 0 ],
@@ -23037,42 +23799,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-106::obj-29" : 				{
-					"parameter_longname" : "3[1]"
-				}
-,
-				"obj-106::obj-32" : 				{
-					"parameter_longname" : "2[1]"
-				}
-,
-				"obj-106::obj-33" : 				{
-					"parameter_longname" : "4[1]"
-				}
-,
-				"obj-106::obj-37" : 				{
-					"parameter_longname" : "Mute[1]"
-				}
-,
-				"obj-106::obj-39" : 				{
-					"parameter_longname" : "1[5]"
-				}
-,
-				"obj-106::obj-49" : 				{
-					"parameter_longname" : "MuteCh1[1]"
-				}
-,
-				"obj-106::obj-58" : 				{
-					"parameter_longname" : "MuteCh2[1]"
-				}
-,
-				"obj-106::obj-64" : 				{
-					"parameter_longname" : "MuteCh3[1]"
-				}
-,
-				"obj-106::obj-70" : 				{
-					"parameter_longname" : "MuteCh4[1]"
-				}
-,
 				"obj-110::obj-39" : 				{
 					"parameter_longname" : "1[4]"
 				}
@@ -23318,25 +24044,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "WasteBand.amxd.maxsnap",
-				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "WasteBand.amxd",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband",
-				"type" : "amxd",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Audio Mixer.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Mixers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Granular-to-go.amxd.maxsnap",
 				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
@@ -23347,6 +24054,19 @@
 				"name" : "Granular-to-go.amxd",
 				"bootpath" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Granular-to-go",
 				"type" : "amxd",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bp.Audio Mixer.maxpat",
+				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Mixers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "iZotope Trash 2.maxsnap",
+				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
@@ -23367,24 +24087,23 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"1" : 57.0,
-						"1[1]" : 27.0,
-						"1[2]" : 0.0,
-						"1[3]" : 0.0,
-						"1[4]" : -20.409448818897616,
-						"1[5]" : -14.173228346456781,
-						"2" : -7.937007874015833,
-						"2[1]" : 0.0,
+						"1" : 70.0,
+						"1[1]" : 54.0,
+						"1[2]" : 18.0,
+						"1[3]" : 96.0,
+						"1[4]" : -8.503937007874001,
+						"1[5]" : 4.0,
+						"1[6]" : 104.0,
+						"2" : -10.2047244094489,
 						"3" : -72.0,
-						"3[1]" : -72.0,
 						"4" : -72.0,
-						"4[1]" : -72.0,
 						"Bypass" : 0.0,
 						"CV2[3]" : 54.33070866141729,
 						"Center" : 543.307086614171112,
 						"Center[1]" : 658.999999999999204,
 						"Damp" : 0.479527559055118,
 						"Depth" : 4397.000000000002728,
+						"Distortion" : 0.023809523809524,
 						"Dry" : 1.0,
 						"Early" : 0.25,
 						"Feedback" : 75.81102362204723,
@@ -23393,34 +24112,30 @@
 						"FreqMode[13]" : 0.0,
 						"Freq[1]" : 2039.418340997917539,
 						"Invert" : 0.0,
+						"Main" : 0.817460317460317,
 						"Mix" : 50.000000000000014,
 						"Mute" : 0.0,
 						"MuteCh1" : 0.0,
-						"MuteCh1[1]" : 0.0,
 						"MuteCh2" : 0.0,
-						"MuteCh2[1]" : 0.0,
 						"MuteCh3" : 0.0,
-						"MuteCh3[1]" : 0.0,
 						"MuteCh4" : 0.0,
-						"MuteCh4[1]" : 0.0,
-						"Mute[1]" : 0.0,
 						"Offset" : -64.0,
 						"PollingInterval" : 20.0,
 						"Rate" : 2.34615170303107,
 						"Rate[1]" : 2.708661417322835,
 						"Regen" : 0.626771653543308,
-						"Regen[1]" : 0.01,
+						"Regen[1]" : 0.753968253968254,
 						"Regen[2]" : 0.8,
-						"Regen[3]" : 0.01,
-						"Size" : 0.1,
-						"Size[1]" : 0.1,
-						"Speed" : 0.444444444444444,
-						"Speed[1]" : -0.111111111111111,
+						"Regen[3]" : 0.753968253968254,
+						"Size" : 44.744651646472953,
+						"Size[1]" : 6.746031746031746,
+						"Speed" : 0.547619047619048,
+						"Speed[1]" : 0.095238095238095,
 						"Speed[2]" : -0.566929133858267,
 						"Spread" : 76.377952755905525,
 						"Tail" : 0.194881889763779,
-						"Time" : 24433.490419858520909,
-						"Time[1]" : 206.349206349206327,
+						"Time" : 29196.962144883749716,
+						"Time[1]" : 420.634920634920604,
 						"Width" : 9507.709156859915311,
 						"amp_scale" : 1.0,
 						"bleed" : 0.755905511811023,
@@ -23431,21 +24146,25 @@
 						"domain_high_midi" : 128.0,
 						"domain_low_midi" : -1.0,
 						"feedback" : 0.370078740157483,
-						"feedforward" : 0.889763779527559,
+						"feedforward" : 0.78740157480315,
 						"freq_domain_high" : 13289.750285970703771,
 						"freq_domain_low" : 0.0,
 						"freq_scale" : 1.0,
 						"gain" : 0.527559055118111,
-						"horizontal" : 0.251968503937008,
+						"horizontal" : 0.8,
 						"live.button[2]" : 0.0,
 						"live.button[3]" : 0.0,
 						"live.button[4]" : 0.0,
 						"live.button[5]" : 0.0,
+						"live.button[6]" : 0.0,
+						"live.button[7]" : 0.0,
 						"live.text" : 0.0,
 						"live.toggle[3]" : 0.0,
 						"live.toggle[4]" : 0.0,
 						"live.toggle[5]" : 0.0,
 						"live.toggle[6]" : 0.0,
+						"live.toggle[7]" : 0.0,
+						"live.toggle[8]" : 0.0,
 						"pictctrl[11]" : 1.0,
 						"pictctrl[12]" : 1.0,
 						"pictctrl[13]" : 1.0,
@@ -23464,54 +24183,16 @@
 						"pictctrl[6]" : 1.0,
 						"pictctrl[7]" : 1.0,
 						"pictctrl[8]" : 1.0,
-						"probability" : 97.637795275590548,
+						"probability" : 36.220472440944881,
 						"scale" : 0.992125984251969,
-						"speed" : -0.111111111111111,
+						"speed" : 0.095238095238095,
 						"speed[1]" : 1.0,
 						"umenu[1]" : 0.0,
 						"umenu[6]" : 1.0,
-						"vertical" : 0.145669291338583,
+						"vertical" : 0.5,
 						"x range" : 66.141732283464563,
 						"y range" : 78.740157480314934,
 						"blob" : 						{
-							"amxd~" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "WasteBand.amxd",
-									"origin" : "WasteBand.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 1,
-									"snapshot" : 									{
-										"name" : "WasteBand.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband/WasteBand.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Hi_L" : -11.105238999999999,
-												"Hi_R" : -7.387072653168218,
-												"Low-Mid_L" : 3606.080077999999958,
-												"Low-Mid_R" : 1886.719970999999987,
-												"Low_L" : -8.705186767445639,
-												"Low_R" : -14.867383999999999,
-												"Mid-Hi_L" : 1504.640014999999948,
-												"Mid-Hi_R" : 5134.399902000000111,
-												"Mid_L" : -22.657240000000002,
-												"Mid_R" : -20.413225244011144,
-												"hiOD_L" : 28.799999,
-												"hiOD_R" : -22.399999999999999,
-												"loOD_L" : 73.599997999999999,
-												"loOD_R" : 72.0,
-												"midOD_L" : -41.599997999999999,
-												"midOD_R" : 30.399999999999999
-											}
-
-										}
-
-									}
-
-								}
- ],
 							"amxd~[1]" : [ 								{
 									"filetype" : "C74Snapshot",
 									"version" : 2,
@@ -23529,16 +24210,16 @@
 												"active_left" : 1.0,
 												"active_right" : 1.0,
 												"density" : 100.0,
-												"grain_range" : 1476.999999999999773,
-												"grain_size" : 1651.000000000000909,
+												"grain_range" : 349.0,
+												"grain_size" : 5643.999999999998181,
 												"min_amp" : 127.0,
 												"playback_speed" : 3.150291338582679,
-												"playback_speed_range" : 10.0,
-												"pulse_offset" : 1000.0,
+												"playback_speed_range" : 2.755905511811034,
+												"pulse_offset" : 12.834645669291984,
 												"pulse_range" : 686.204724409448431,
 												"randomize" : 0.0,
 												"range" : 127.0,
-												"wet_dry" : 100.0
+												"wet_dry" : 81.102362204724329
 											}
 
 										}
@@ -23554,8 +24235,32 @@
 							"range[7]" : [ 1 ],
 							"range[8]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.08658044778195 ],
-							"textbutton" : [ 1 ]
+							"slider[3]" : [ 0.481031845362258 ],
+							"textbutton" : [ 1 ],
+							"vst~" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "iZotope Trash 2",
+									"origin" : "iZotope Trash 2.vstinfo",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 1,
+									"snapshot" : 									{
+										"pluginname" : "iZotope Trash 2.vstinfo",
+										"plugindisplayname" : "iZotope Trash 2",
+										"pluginsavedname" : "",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"sliderorder" : [  ],
+										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+										"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+									}
+
+								}
+ ]
 						}
 
 					}
@@ -23578,24 +24283,23 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"1" : 57.0,
-									"1[1]" : 27.0,
-									"1[2]" : 0.0,
-									"1[3]" : 0.0,
-									"1[4]" : -20.409448818897616,
-									"1[5]" : -14.173228346456781,
-									"2" : -7.937007874015833,
-									"2[1]" : 0.0,
+									"1" : 70.0,
+									"1[1]" : 54.0,
+									"1[2]" : 18.0,
+									"1[3]" : 96.0,
+									"1[4]" : -8.503937007874001,
+									"1[5]" : 4.0,
+									"1[6]" : 104.0,
+									"2" : -10.2047244094489,
 									"3" : -72.0,
-									"3[1]" : -72.0,
 									"4" : -72.0,
-									"4[1]" : -72.0,
 									"Bypass" : 0.0,
 									"CV2[3]" : 54.33070866141729,
 									"Center" : 543.307086614171112,
 									"Center[1]" : 658.999999999999204,
 									"Damp" : 0.479527559055118,
 									"Depth" : 4397.000000000002728,
+									"Distortion" : 0.023809523809524,
 									"Dry" : 1.0,
 									"Early" : 0.25,
 									"Feedback" : 75.81102362204723,
@@ -23604,34 +24308,30 @@
 									"FreqMode[13]" : 0.0,
 									"Freq[1]" : 2039.418340997917539,
 									"Invert" : 0.0,
+									"Main" : 0.817460317460317,
 									"Mix" : 50.000000000000014,
 									"Mute" : 0.0,
 									"MuteCh1" : 0.0,
-									"MuteCh1[1]" : 0.0,
 									"MuteCh2" : 0.0,
-									"MuteCh2[1]" : 0.0,
 									"MuteCh3" : 0.0,
-									"MuteCh3[1]" : 0.0,
 									"MuteCh4" : 0.0,
-									"MuteCh4[1]" : 0.0,
-									"Mute[1]" : 0.0,
 									"Offset" : -64.0,
 									"PollingInterval" : 20.0,
 									"Rate" : 2.34615170303107,
 									"Rate[1]" : 2.708661417322835,
 									"Regen" : 0.626771653543308,
-									"Regen[1]" : 0.01,
+									"Regen[1]" : 0.753968253968254,
 									"Regen[2]" : 0.8,
-									"Regen[3]" : 0.01,
-									"Size" : 0.1,
-									"Size[1]" : 0.1,
-									"Speed" : 0.444444444444444,
-									"Speed[1]" : -0.111111111111111,
+									"Regen[3]" : 0.753968253968254,
+									"Size" : 44.744651646472953,
+									"Size[1]" : 6.746031746031746,
+									"Speed" : 0.547619047619048,
+									"Speed[1]" : 0.095238095238095,
 									"Speed[2]" : -0.566929133858267,
 									"Spread" : 76.377952755905525,
 									"Tail" : 0.194881889763779,
-									"Time" : 24433.490419858520909,
-									"Time[1]" : 206.349206349206327,
+									"Time" : 29196.962144883749716,
+									"Time[1]" : 420.634920634920604,
 									"Width" : 9507.709156859915311,
 									"amp_scale" : 1.0,
 									"bleed" : 0.755905511811023,
@@ -23642,21 +24342,25 @@
 									"domain_high_midi" : 128.0,
 									"domain_low_midi" : -1.0,
 									"feedback" : 0.370078740157483,
-									"feedforward" : 0.889763779527559,
+									"feedforward" : 0.78740157480315,
 									"freq_domain_high" : 13289.750285970703771,
 									"freq_domain_low" : 0.0,
 									"freq_scale" : 1.0,
 									"gain" : 0.527559055118111,
-									"horizontal" : 0.251968503937008,
+									"horizontal" : 0.8,
 									"live.button[2]" : 0.0,
 									"live.button[3]" : 0.0,
 									"live.button[4]" : 0.0,
 									"live.button[5]" : 0.0,
+									"live.button[6]" : 0.0,
+									"live.button[7]" : 0.0,
 									"live.text" : 0.0,
 									"live.toggle[3]" : 0.0,
 									"live.toggle[4]" : 0.0,
 									"live.toggle[5]" : 0.0,
 									"live.toggle[6]" : 0.0,
+									"live.toggle[7]" : 0.0,
+									"live.toggle[8]" : 0.0,
 									"pictctrl[11]" : 1.0,
 									"pictctrl[12]" : 1.0,
 									"pictctrl[13]" : 1.0,
@@ -23675,54 +24379,16 @@
 									"pictctrl[6]" : 1.0,
 									"pictctrl[7]" : 1.0,
 									"pictctrl[8]" : 1.0,
-									"probability" : 97.637795275590548,
+									"probability" : 36.220472440944881,
 									"scale" : 0.992125984251969,
-									"speed" : -0.111111111111111,
+									"speed" : 0.095238095238095,
 									"speed[1]" : 1.0,
 									"umenu[1]" : 0.0,
 									"umenu[6]" : 1.0,
-									"vertical" : 0.145669291338583,
+									"vertical" : 0.5,
 									"x range" : 66.141732283464563,
 									"y range" : 78.740157480314934,
 									"blob" : 									{
-										"amxd~" : [ 											{
-												"filetype" : "C74Snapshot",
-												"version" : 2,
-												"minorversion" : 0,
-												"name" : "WasteBand.amxd",
-												"origin" : "WasteBand.amxd",
-												"type" : "amxd",
-												"subtype" : "Undefined",
-												"embed" : 1,
-												"snapshot" : 												{
-													"name" : "WasteBand.amxd",
-													"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Wasteband/WasteBand.amxd",
-													"valuedictionary" : 													{
-														"parameter_values" : 														{
-															"Hi_L" : -11.105238999999999,
-															"Hi_R" : -7.387072653168218,
-															"Low-Mid_L" : 3606.080077999999958,
-															"Low-Mid_R" : 1886.719970999999987,
-															"Low_L" : -8.705186767445639,
-															"Low_R" : -14.867383999999999,
-															"Mid-Hi_L" : 1504.640014999999948,
-															"Mid-Hi_R" : 5134.399902000000111,
-															"Mid_L" : -22.657240000000002,
-															"Mid_R" : -20.413225244011144,
-															"hiOD_L" : 28.799999,
-															"hiOD_R" : -22.399999999999999,
-															"loOD_L" : 73.599997999999999,
-															"loOD_R" : 72.0,
-															"midOD_L" : -41.599997999999999,
-															"midOD_R" : 30.399999999999999
-														}
-
-													}
-
-												}
-
-											}
- ],
 										"amxd~[1]" : [ 											{
 												"filetype" : "C74Snapshot",
 												"version" : 2,
@@ -23740,16 +24406,16 @@
 															"active_left" : 1.0,
 															"active_right" : 1.0,
 															"density" : 100.0,
-															"grain_range" : 1476.999999999999773,
-															"grain_size" : 1651.000000000000909,
+															"grain_range" : 349.0,
+															"grain_size" : 5643.999999999998181,
 															"min_amp" : 127.0,
 															"playback_speed" : 3.150291338582679,
-															"playback_speed_range" : 10.0,
-															"pulse_offset" : 1000.0,
+															"playback_speed_range" : 2.755905511811034,
+															"pulse_offset" : 12.834645669291984,
 															"pulse_range" : 686.204724409448431,
 															"randomize" : 0.0,
 															"range" : 127.0,
-															"wet_dry" : 100.0
+															"wet_dry" : 81.102362204724329
 														}
 
 													}
@@ -23765,8 +24431,32 @@
 										"range[7]" : [ 1 ],
 										"range[8]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.08658044778195 ],
-										"textbutton" : [ 1 ]
+										"slider[3]" : [ 0.481031845362258 ],
+										"textbutton" : [ 1 ],
+										"vst~" : [ 											{
+												"filetype" : "C74Snapshot",
+												"version" : 2,
+												"minorversion" : 0,
+												"name" : "iZotope Trash 2",
+												"origin" : "iZotope Trash 2.vstinfo",
+												"type" : "VST",
+												"subtype" : "AudioEffect",
+												"embed" : 1,
+												"snapshot" : 												{
+													"pluginname" : "iZotope Trash 2.vstinfo",
+													"plugindisplayname" : "iZotope Trash 2",
+													"pluginsavedname" : "",
+													"pluginsaveduniqueid" : 0,
+													"version" : 1,
+													"isbank" : 0,
+													"isbase64" : 1,
+													"sliderorder" : [  ],
+													"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+													"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+												}
+
+											}
+ ]
 									}
 
 								}
