@@ -7,10 +7,17 @@ app.get('/', (req, resp) => {
     resp.sendFile(__dirname + '/index.html');
 });
 
+let userCount = 0
+
 io.on('connection', (socket) => {
-    console.log('A user has connected!');
+    
+    addUser();
+
+    socket.emit('userCount', userCount);
+
     socket.on('disconnect', () => {
-        console.log("A user has disconnected");
+        removeUser();
+        socket.emit('userCount', userCount);
     });
 
     socket.on('message', (msg) => {
@@ -58,6 +65,16 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('talkback', msg);
     });
 });
+
+const addUser = () => {
+    ++userCount;
+    console.log('A user has connected!');
+}
+
+const removeUser = () => {
+    --userCount;
+    console.log("A user has disconnected");
+}
 
 
 http.listen(port, () => {

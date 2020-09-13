@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 2093.0, 1290.0 ],
+		"rect" : [ 34.0, 77.0, 2093.0, 1290.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,804 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-169",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 679.745069017021478, 425.059703707695007, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[9]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[19]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-170",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 733.854530880856942, 425.059703707695007, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "DelaysMin[1]",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.01,
+							"parameter_shortname" : "DelaysMin",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[20]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 671.0807747542774, 397.44776439666748, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.01. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-166",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 756.407315557197535, 368.661162734031677, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[12]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Regen",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Regen",
+					"varname" : "live.toggle[10]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-167",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 710.972642580668207, 368.661162734031677, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[11]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[10]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-168",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 663.0, 294.280566573143005, 161.417927742004622, 66.0 ],
+					"text" : "jk.pushrotary 5 @dial5 r @dial5 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Regen @textoff Regen"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 639.853201190630671, 785.70148503780365, 110.0, 22.0 ],
+					"text" : "scale 0. 1. 0. 5000."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-163",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 639.853201190630671, 833.93552553653717, 81.0, 22.0 ],
+					"text" : "DelaysMin $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1680.0, 1626.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-156",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1738.074604153633118, 1501.44776439666748, 117.0, 22.0 ],
+					"text" : "scale 1. 127. 0. 150."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-157",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1823.401144956553253, 1472.661162734031677, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[11]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Master",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Master",
+					"varname" : "live.toggle[9]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-158",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1777.966471980023925, 1472.661162734031677, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[10]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[9]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-159",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1738.074604153633118, 1529.059703707695007, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[8]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[15]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-160",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 1729.993829399355718, 1398.280566573143005, 159.110973335796189, 66.0 ],
+					"text" : "jk.pushrotary 11 @dial11 r @dial11 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Master @textoff Master"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1772.074604153633118, 1529.059703707695007, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "Delays[1]",
+							"parameter_mmax" : 150.0,
+							"parameter_shortname" : "Delays",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[18]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-154",
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 338.85074520111084, 1504.0, 22.0, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1348.664162397384644, 1339.76504647731781, 44.5, 131.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-144",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 816.074604153633118, 703.44776439666748, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.01. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-145",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 901.401144956553253, 674.661162734031677, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[10]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Delays",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Delays",
+					"varname" : "live.toggle[8]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-147",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 855.966471980023925, 674.661162734031677, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[9]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[8]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-149",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 816.074604153633118, 731.059703707695007, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[7]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[16]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-150",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 807.993829399355718, 600.280566573143005, 159.110973335796416, 66.0 ],
+					"text" : "jk.pushrotary 7 @dial7 r @dial7 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Delays @textoff Delays"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-153",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 849.074604153633118, 731.059703707695007, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "DelaysMax",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.01,
+							"parameter_shortname" : "DelaysMax",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[17]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-138",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 816.074604153633118, 797.70148503780365, 110.0, 22.0 ],
+					"text" : "scale 0. 1. 0. 5000."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autosave" : 1,
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-137",
+					"lockeddragscroll" : 0,
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 4,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "", "" ],
+					"patching_rect" : [ 663.0, 947.0, 599.0, 196.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "amxd~",
+							"parameter_shortname" : "amxd~",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 1,
+						"patchername" : "Max DelayTaps.amxd",
+						"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps/Max DelayTaps.amxd"
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "max~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"name" : "Max DelayTaps.amxd",
+							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps/Max DelayTaps.amxd",
+							"valuedictionary" : 							{
+								"parameter_values" : 								{
+									"DelaysMax" : 4036.256693850370993,
+									"DelaysMin" : 3774.604718225055876,
+									"Dry/Wet" : 48.818897637795303,
+									"Feedback" : 50.0,
+									"LevelsMax" : 74.803149606299243,
+									"LevelsMin" : 9.448818897637794,
+									"MasterGain" : -11.023622047244082,
+									"PansMax" : 50.0,
+									"PansMin" : -23.0,
+									"blob" : 									{
+										"Taps" : [ 27.0 ],
+										"Delays" : [ -0.21875, 0.0, 0.0, -0.125, -0.03125, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.015625, 0.1875, 0.0, 0.0, 0.0, -0.046875, -0.046875, -0.046875, 0.6875, 0.65625, 0.0, 0.0, -0.515625, -0.515625, -0.515625, -0.515625 ],
+										"Levels" : [ -0.296875, -0.515625, 0.0, 0.0, 0.5625, 0.5625, 0.5, 0.390625, 0.296875, 0.1875, 0.015625, -0.15625, -0.28125, 0.0, 0.0, 0.015625, 0.375, 0.296875, 0.234375, 0.0, 0.0, 0.0, -0.0625, -0.03125, 0.140625, 0.28125, 0.34375 ],
+										"Pans" : [ 0.0, 0.59375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.421875, 0.484375, 0.5, 0.53125, 0.546875, 0.546875, 0.546875, 0.546875, 0.5390625, 0.53125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.171875, 0.0, -0.125 ]
+									}
+
+								}
+
+							}
+
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Max DelayTaps.amxd",
+									"origin" : "Max DelayTaps.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"snapshot" : 									{
+										"name" : "Max DelayTaps.amxd",
+										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps/Max DelayTaps.amxd",
+										"valuedictionary" : 										{
+											"parameter_values" : 											{
+												"DelaysMax" : 4036.256693850370993,
+												"DelaysMin" : 3774.604718225055876,
+												"Dry/Wet" : 48.818897637795303,
+												"Feedback" : 50.0,
+												"LevelsMax" : 74.803149606299243,
+												"LevelsMin" : 9.448818897637794,
+												"MasterGain" : -11.023622047244082,
+												"PansMax" : 50.0,
+												"PansMin" : -23.0,
+												"blob" : 												{
+													"Taps" : [ 27.0 ],
+													"Delays" : [ -0.21875, 0.0, 0.0, -0.125, -0.03125, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.015625, 0.1875, 0.0, 0.0, 0.0, -0.046875, -0.046875, -0.046875, 0.6875, 0.65625, 0.0, 0.0, -0.515625, -0.515625, -0.515625, -0.515625 ],
+													"Levels" : [ -0.296875, -0.515625, 0.0, 0.0, 0.5625, 0.5625, 0.5, 0.390625, 0.296875, 0.1875, 0.015625, -0.15625, -0.28125, 0.0, 0.0, 0.015625, 0.375, 0.296875, 0.234375, 0.0, 0.0, 0.0, -0.0625, -0.03125, 0.140625, 0.28125, 0.34375 ],
+													"Pans" : [ 0.0, 0.59375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.421875, 0.484375, 0.5, 0.53125, 0.546875, 0.546875, 0.546875, 0.546875, 0.5390625, 0.53125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.171875, 0.0, -0.125 ]
+												}
+
+											}
+
+										}
+
+									}
+,
+									"fileref" : 									{
+										"name" : "Max DelayTaps.amxd",
+										"filename" : "Max DelayTaps.amxd.maxsnap",
+										"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "72a53c7b36a2a98e28550e36ecd705d9"
+									}
+
+								}
+ ]
+						}
+
+					}
+,
+					"text" : "amxd~ \"Max DelayTaps.amxd\"",
+					"varname" : "amxd~",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 886.040579541029729, 1347.774693727493286, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.00. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.407, 0.374, 1.0 ],
+					"bgoncolor" : [ 1.0, 0.172, 0.179, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-105",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 971.367120343949864, 1318.988092064857483, 63.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.toggle[9]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Granular",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Granlular",
+					"varname" : "live.toggle[7]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-106",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 925.932447367420536, 1318.988092064857483, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button[8]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button[7]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
+					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-110",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 886.040579541029729, 1375.386633038520813, 28.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1[4]",
+							"parameter_shortname" : "1",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[9]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-124",
+					"linecount" : 5,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "bang", "int", "" ],
+					"patching_rect" : [ 877.959804786752329, 1244.607495903968811, 161.417927742004622, 66.0 ],
+					"text" : "jk.pushrotary 10 @dial10 r @dial10 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Granlular @textoff Granular"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-127",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 919.040579541029729, 1375.386633038520813, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -0.566929133858267 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "Granular",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Granular",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[14]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 663.414649963378906, 98.536587715148926, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 674.146357536315918, 144.390247344970703, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-152",
 					"maxclass" : "newobj",
@@ -113,15 +911,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-129",
-					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1541.0, 485.0, 252.0, 176.5 ],
-					"separator" : "newlinespace",
-					"text" : "asdf\rNew\rfinally\rwhy\rasdf\r"
+					"separator" : "newlinespace"
 				}
 
 			}
@@ -132,7 +928,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 498.0, 1000.0, 170.0, 22.0 ],
+					"patching_rect" : [ 1572.513275146484375, 1504.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 483.701553652692382, 995.471910112359524, 50.0, 22.0 ],
 					"text" : "Master"
@@ -172,8 +968,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 725.629318992296703, 1340.94776439666748, 120.0, 22.0 ],
-					"text" : "scale 1. 127. 0.01. 1."
+					"patching_rect" : [ 497.43314394353979, 1347.774693727493286, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.00. 1."
 				}
 
 			}
@@ -194,7 +990,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 810.955859795216838, 1312.161162734031677, 63.0, 20.0 ],
+					"patching_rect" : [ 582.759684746459925, 1318.988092064857483, 63.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -225,7 +1021,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 765.521186818687511, 1312.161162734031677, 15.0, 15.0 ],
+					"patching_rect" : [ 537.325011769930597, 1318.988092064857483, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -256,7 +1052,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 725.629318992296703, 1368.559703707695007, 28.0, 48.0 ],
+					"patching_rect" : [ 497.43314394353979, 1375.386633038520813, 28.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "1[6]",
@@ -280,8 +1076,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 717.548544238019304, 1237.780566573143005, 161.417927742004736, 66.0 ],
-					"text" : "jk.pushrotary 9 @dial9 r @dial9 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Main @textoff Main"
+					"patching_rect" : [ 489.35236918926239, 1244.607495903968811, 159.110973335796302, 66.0 ],
+					"text" : "jk.pushrotary 8 @dial8 r @dial8 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Main @textoff Main"
 				}
 
 			}
@@ -293,14 +1089,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 758.629318992296703, 1368.559703707695007, 41.0, 48.0 ],
+					"patching_rect" : [ 530.43314394353979, 1375.386633038520813, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Main",
 							"parameter_mmax" : 1.0,
-							"parameter_mmin" : 0.01,
 							"parameter_shortname" : "Main",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -319,8 +1114,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 537.574604153633118, 1340.94776439666748, 120.0, 22.0 ],
-					"text" : "scale 1. 127. 0.01. 1."
+					"patching_rect" : [ 693.962663054466134, 1347.774693727493286, 120.0, 22.0 ],
+					"text" : "scale 1. 127. 0.00. 1."
 				}
 
 			}
@@ -341,7 +1136,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 622.901144956553253, 1312.161162734031677, 63.0, 20.0 ],
+					"patching_rect" : [ 779.289203857386269, 1318.988092064857483, 63.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -372,7 +1167,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 577.466471980023925, 1312.161162734031677, 15.0, 15.0 ],
+					"patching_rect" : [ 733.854530880856942, 1318.988092064857483, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -403,7 +1198,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 537.574604153633118, 1368.559703707695007, 28.0, 48.0 ],
+					"patching_rect" : [ 693.962663054466134, 1375.386633038520813, 28.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "1[5]",
@@ -427,8 +1222,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 529.493829399355718, 1237.780566573143005, 161.417927742004622, 66.0 ],
-					"text" : "jk.pushrotary 8 @dial8 r @dial8 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Distortion @textoff Distortion"
+					"patching_rect" : [ 685.881888300188734, 1244.607495903968811, 159.110973335796302, 66.0 ],
+					"text" : "jk.pushrotary 9 @dial9 r @dial9 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Distortion @textoff Distortion"
 				}
 
 			}
@@ -440,14 +1235,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 570.574604153633118, 1368.559703707695007, 41.0, 48.0 ],
+					"patching_rect" : [ 726.962663054466134, 1375.386633038520813, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Distortion",
 							"parameter_mmax" : 1.0,
-							"parameter_mmin" : 0.01,
 							"parameter_shortname" : "Distortion",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -501,7 +1295,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 601.0, 1627.0, 56.0, 22.0 ],
-					"sig" : 0.720412503343527
+					"sig" : 0.293650793650794
 				}
 
 			}
@@ -545,7 +1339,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 505.0, 1627.0, 56.0, 22.0 ],
-					"sig" : 0.541119574050598
+					"sig" : 0.0
 				}
 
 			}
@@ -573,7 +1367,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 408.0, 1627.0, 56.0, 22.0 ],
-					"sig" : 0.01
+					"sig" : 0.944444444444444
 				}
 
 			}
@@ -637,7 +1431,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+							"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........LDiA9D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
 						}
 ,
 						"snapshotlist" : 						{
@@ -661,7 +1455,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........SrYB+D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
+										"blob" : "5451.CMlaKA....fQPMDZ....AnkaTIC..ff.....APTYlEVcrQG..............................TwC.TA..XvZNBP.....zSA..bD...P..PDKGE....PKw3YP..............3Op....TB....OI0DTUwzTE8EQIIkOuDTavM2KCEVahIWZjcVYfDCdwHiK2Elc.XC...P.Ze2LCE.....UelPvdyiHBYau0LD...TPAj....fuc9WQb8nh.UNfH6iP0moO..........fMG...A.fE..........P.A................frP...xBA...AL.....XMlH.A....D..fWCxMD..wYQd8ldAC........3O...f+...HOD..f7P..............3O...f+D...........................7C...vOADP...........P.A...fFD..........frP...xBA5raAL.....rFS7.A....D..X6ygXD..wYQB83hAC........3O...f+n4RdID..f7PZ650AC........3O...f+D................................vOADvL....Q.....P.A................frP...xBA...AL.....wuZj.Q6V3AD....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD............P.A................frP...xBA...............A....D....PbVD..wYQ..............3O...f+...HOD..f7P..............3O...f+D...........................7C...vOAD..I...........AD.................xBA..HKD...............D....P.....wYQ..DmEA.............f+....9C..f7P...xCA.............f+....9S.A.........................vO....+DP.HS...nDX8dQ.....XI........PVCUZ4A....HD.........QhXuuJ....P..........P.....K2SyOrbOM+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A....MBKW+zHrb8C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D....vYqC8CmsNzO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+..VB........j0PkVd.....BA........PjH16qB....D..........D.....0Hr7CTivxO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O.HD.........QhXuuJ....P..........P........vO....+.....f+rY4O.ZVA+.f........................f+....9C.BA........PjH16qB....D..........D........7C...vO.....3OaV9CflUvO.H........................3O...f+.fP.........DIh89p.....A..........A........+....7C.....9ylk+.nYE7C.B........................9C...3O..B.................fBDI.oyPtUNiEA.PbXz..........P..........mD...D....RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA..fDD...3O...xBA.........HAC........RP...f+...HKD.........fJL..frP...HAA...9C..frP..........Rv........fDD...3O...xBA.........nBC..HKD...RP...f+...HKD.........fDL........HAA...9C..frP..........pv...xBA......A....Xy6yEL..frP........fFD88SyO..DmFQe+z7yLP13P+++6As1kLLD.......9aEBL........HAA...9C...3O.......9F2iv...xBA.........H..................JP...7BA..5SD..wgQC..........A.........P..........D..........A.........P..........D..........A.........P..........D.........fJ....................................................AD......tA..........LDiA9D....f........xBA......PA...T..........A....H.....A....C....X..........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PA....A......WF...XY...PjNb8jakQjboYWYbQzaiUWak4FcywUZZ8FcuAWYbQkbgMGZfHCWGw1ahEFaf.kbkMWYzMGWAc1YxU1byklckwkPkEFcfbjbo4FYkImK30Fa...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................lA....D......A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA.......................................LUiBID...xP..f9CA.f6RzJjQxPoPQhD8+azzK................zrqGvFCGM81LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9nYlY8SyLyjOMyLS9zLyL4C.............fJD..H3P..vPDA.vOTjfwdmP..7bFA...BL...Hv...f.C...BLf9qrO...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9PA...PA....E....T....PE....Q.........D....P.....A....j4AjZPhhbm.A....P.Az....PC....M....z....PC....M...............................D...........................B....D..........8.....P..D..AD......A....D...................fav.....L..........A....H..........A......lA....DP.ADP.A...HKD..frP...xBA..HKD..frP...xBA..HMD..fzP...RCA..HMD..fzP...RCA..........................................HID...xP..f9CA.f6RD..wYQBL0EFA..........................P939+1LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9...fJD..H3P..vPDA.vOTD..RcQ..7bFA...BL...Hv...f.C...BL...Hv...f.2LyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9zLyL4SyLyjOMyLS9L....PA....E....T....PA....D.........D....P.....A....D....P.....A.......z....PC....M....z....PC....M...........................................................................8.....P..D..AD......A....D...................fav.....L..........A....H..........A.....PO.....D..A.P.A.....P.....A...................3FL.....C.........P.....B.........P......zA.........A....H...........L.....A.........f....P.A.P......b.....QkYVX0wFc"
 									}
 ,
 									"fileref" : 									{
@@ -691,20 +1485,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.0, 648.0, 63.0, 22.0 ],
-					"text" : "density $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-97",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 834.0, 616.0, 50.0, 22.0 ]
+					"patching_rect" : [ 815.853201190630671, 844.0, 85.0, 22.0 ],
+					"text" : "DelaysMax $1"
 				}
 
 			}
@@ -726,150 +1508,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 701.966471980023925, 659.0, 65.0, 22.0 ],
+					"patching_rect" : [ 530.43314394353979, 702.0, 65.0, 22.0 ],
 					"text" : "getparams"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
-					"id" : "obj-110",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Audio Mixer.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 926.0, 995.0, 201.0, 116.0 ],
-					"varname" : "bp.Audio Mixer[2]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-109",
-					"lockeddragscroll" : 0,
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 799.5, 723.0, 446.0, 196.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "amxd~[1]",
-							"parameter_shortname" : "amxd~[1]",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"patchername" : "Granular-to-go.amxd",
-						"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Granular-to-go/Granular-to-go.amxd"
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "max~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"name" : "Granular-to-go.amxd",
-							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Granular-to-go/Granular-to-go.amxd",
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"active_left" : 1.0,
-									"active_right" : 1.0,
-									"density" : 100.0,
-									"grain_range" : 349.0,
-									"grain_size" : 5643.999999999998181,
-									"min_amp" : 127.0,
-									"playback_speed" : 3.150291338582679,
-									"playback_speed_range" : 2.755905511811034,
-									"pulse_offset" : 12.834645669291984,
-									"pulse_range" : 686.204724409448431,
-									"randomize" : 0.0,
-									"range" : 127.0,
-									"wet_dry" : 81.102362204724329
-								}
-
-							}
-
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Granular-to-go.amxd",
-									"origin" : "Granular-to-go.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Granular-to-go.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Granular-to-go/Granular-to-go.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"active_left" : 1.0,
-												"active_right" : 1.0,
-												"density" : 100.0,
-												"grain_range" : 349.0,
-												"grain_size" : 5643.999999999998181,
-												"min_amp" : 127.0,
-												"playback_speed" : 3.150291338582679,
-												"playback_speed_range" : 2.755905511811034,
-												"pulse_offset" : 12.834645669291984,
-												"pulse_range" : 686.204724409448431,
-												"randomize" : 0.0,
-												"range" : 127.0,
-												"wet_dry" : 81.102362204724329
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Granular-to-go.amxd",
-										"filename" : "Granular-to-go.amxd.maxsnap",
-										"filepath" : "D:/OneDrive/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "0bc2aacbc878257d7e88dd449fb7e961"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "amxd~ Granular-to-go.amxd",
-					"varname" : "amxd~[1]",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -5060,7 +5700,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 519.0, 68.0, 82.0, 22.0 ],
-													"text" : "90"
+													"text" : "38"
 												}
 
 											}
@@ -6706,7 +7346,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 687.074604153633118, 397.44776439666748, 120.0, 22.0 ],
+					"patching_rect" : [ 639.853201190630671, 667.167197823524475, 120.0, 22.0 ],
 					"text" : "scale 1. 127. 0.01. 1."
 				}
 
@@ -6728,7 +7368,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 772.401144956553253, 368.661162734031677, 63.0, 20.0 ],
+					"patching_rect" : [ 725.179741993550806, 638.380596160888672, 63.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -6740,9 +7380,9 @@
 
 					}
 ,
-					"text" : "Regen",
+					"text" : "DelaysMin",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"texton" : "Regen",
+					"texton" : "DelaysMin",
 					"varname" : "live.toggle[4]"
 				}
 
@@ -6759,7 +7399,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 726.966471980023925, 368.661162734031677, 15.0, 15.0 ],
+					"patching_rect" : [ 679.745069017021478, 638.380596160888672, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -6790,7 +7430,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 687.074604153633118, 425.059703707695007, 28.0, 48.0 ],
+					"patching_rect" : [ 639.853201190630671, 694.779137134552002, 28.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "1[3]",
@@ -6809,13 +7449,13 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-66",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 678.993829399355718, 294.280566573143005, 175.194045543670654, 54.0 ],
-					"text" : "jk.pushrotary 6 @dial6 r @dial6 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Regen @textoff Regen"
+					"patching_rect" : [ 621.353201190630671, 564.0, 157.0, 66.0 ],
+					"text" : "jk.pushrotary 6 @dial6 r @dial6 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton DelaysMin @textoff DelaysMin"
 				}
 
 			}
@@ -6827,15 +7467,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 720.074604153633118, 425.059703707695007, 41.0, 48.0 ],
+					"patching_rect" : [ 672.853201190630671, 694.779137134552002, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Regen[3]",
+							"parameter_longname" : "DelaysMin",
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : 0.01,
-							"parameter_shortname" : "Regen",
+							"parameter_shortname" : "DelaysMin",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -6885,8 +7525,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 471.059685826301575, 397.44776439666748, 127.0, 22.0 ],
-					"text" : "scale 1. 127. 0.12. 50."
+					"patching_rect" : [ 481.495995881663021, 394.0, 133.0, 22.0 ],
+					"text" : "scale 1. 127. 0.10. 150."
 				}
 
 			}
@@ -6900,7 +7540,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 584.013080691302093, 397.44776439666748, 49.0, 20.0 ],
-					"text" : "2 0"
+					"text" : "1 0"
 				}
 
 			}
@@ -7002,13 +7642,13 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-48",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 462.978911072024232, 294.280566573143005, 151.462702393531742, 66.0 ],
-					"text" : "jk.pushrotary 5 @dial5 r @dial5 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Size @textoff Size"
+					"patching_rect" : [ 462.978911072024232, 294.280566573143005, 170.034169619277861, 54.0 ],
+					"text" : "jk.pushrotary 4 @dial4 r @dial4 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Size @textoff Size"
 				}
 
 			}
@@ -7026,7 +7666,7 @@
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Size[1]",
-							"parameter_mmax" : 50.0,
+							"parameter_mmax" : 150.0,
 							"parameter_mmin" : 0.1,
 							"parameter_shortname" : "Size",
 							"parameter_type" : 0,
@@ -7078,8 +7718,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 268.074618458747864, 397.44776439666748, 133.0, 22.0 ],
-					"text" : "scale 1. 127. 0.10. 500."
+					"patching_rect" : [ 268.074618458747864, 397.44776439666748, 140.0, 22.0 ],
+					"text" : "scale 1. 127. 0.10. 5000."
 				}
 
 			}
@@ -7093,7 +7733,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 381.028013323748382, 397.44776439666748, 49.0, 20.0 ],
-					"text" : "1 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -7200,8 +7840,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 259.993843704470521, 294.280566573143005, 159.110973335796245, 66.0 ],
-					"text" : "jk.pushrotary 4 @dial4 r @dial4 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Time @textoff Time"
+					"patching_rect" : [ 259.993843704470521, 294.280566573143005, 161.417927742004224, 66.0 ],
+					"text" : "jk.pushrotary 3 @dial3 r @dial3 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Time @textoff Time"
 				}
 
 			}
@@ -7219,7 +7859,7 @@
 							"parameter_initial" : [ -0.566929133858267 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Time[1]",
-							"parameter_mmax" : 500.0,
+							"parameter_mmax" : 5000.0,
 							"parameter_mmin" : 0.1,
 							"parameter_shortname" : "Time",
 							"parameter_type" : 0,
@@ -9000,7 +9640,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 701.0, 180.0, 56.0, 23.0 ],
-									"restore" : [ 0.755905511811023 ],
+									"restore" : [ 1.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -9021,7 +9661,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 421.0, 180.0, 50.0, 23.0 ],
-									"restore" : [ 0.370078740157483 ],
+									"restore" : [ 1.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -10482,7 +11122,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 542.0, 194.928955000000002, 64.0, 23.0 ],
-									"restore" : [ 36.220472440944881 ],
+									"restore" : [ 27.086614173228345 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -13766,7 +14406,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 599.0, 159.0, 76.0, 23.0 ],
-									"restore" : [ 0.5 ],
+									"restore" : [ 0.9 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -13971,7 +14611,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 464.5, 159.0, 75.0, 23.0 ],
-									"restore" : [ 0.8 ],
+									"restore" : [ 0.9 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -15106,7 +15746,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1209.5, 273.0, 243.0, 22.0 ],
+					"patching_rect" : [ 1259.743903636932373, 272.512195110321045, 243.0, 22.0 ],
 					"text" : "video3 \"43\""
 				}
 
@@ -15170,7 +15810,7 @@
 					"patching_rect" : [ 1209.5, 303.0, 656.0, 91.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 772.0, 1022.335275769233704, 1181.0, 91.0 ],
-					"text" : "asdf asdf"
+					"text" : "Hey"
 				}
 
 			}
@@ -15178,11 +15818,11 @@
 				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 6,
-					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 926.0, 261.797871708869934, 238.0, 22.0 ],
-					"text" : "route talkback video1 video2 video3 video4"
+					"numinlets" : 7,
+					"numoutlets" : 7,
+					"outlettype" : [ "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 926.0, 261.797871708869934, 297.0, 22.0 ],
+					"text" : "route talkback video1 video2 video3 video4 userCount"
 				}
 
 			}
@@ -15410,7 +16050,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 175.729512666666778, 406.0, 49.0, 20.0 ],
-					"text" : "0 0"
+					"text" : "9 0"
 				}
 
 			}
@@ -15443,9 +16083,9 @@
 
 					}
 ,
-					"text" : "Rotary 3",
+					"text" : "Speed",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"texton" : "Rotary 3",
+					"texton" : "Speed",
 					"varname" : "live.toggle[3]"
 				}
 
@@ -15481,7 +16121,7 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"activefgdialcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activefgdialcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
 					"activeneedlecolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"fgdialcolor" : [ 0.243137254901961, 0.698039215686274, 0.415686274509804, 1.0 ],
 					"focusbordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -15517,8 +16157,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "bang", "int", "" ],
-					"patching_rect" : [ 35.292358666666871, 294.280566573143005, 179.0, 66.0 ],
-					"text" : "jk.pushrotary 3 @dial3 r @dial3 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton \"Rotary 3\" @textoff \"Rotary 3\""
+					"patching_rect" : [ 35.292358666666871, 294.280566573143005, 156.999999999999943, 66.0 ],
+					"text" : "jk.pushrotary 2 @dial2 r @dial2 b @needle y @dialtextcolor k @bton y @btoff b @oncolor y @offcolor b @texton Speed @textoff Speed"
 				}
 
 			}
@@ -15526,7 +16166,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-36",
-					"items" : [ "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "2- Studio 26c MIDI In", ",", "Granular-to-go.amxd" ],
+					"items" : [ "2- Studio 26c MIDI In", ",", "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "Granular-to-go.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -15540,7 +16180,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-2",
-					"items" : [ "Microsoft GS Wavetable Synth", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "2- Studio 26c MIDI Out", ",", "Granular-to-go.amxd" ],
+					"items" : [ "Microsoft GS Wavetable Synth", ",", "2- Studio 26c MIDI Out", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "Granular-to-go.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21027,19 +21667,19 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 175.23620600000001, 372.0, 59.5, 22.0 ],
 									"restore" : 									{
-										"Damp" : [ 0.479527559055118 ],
-										"Dry" : [ 1.0 ],
-										"Early" : [ 0.25 ],
-										"Regen" : [ 0.01 ],
-										"Size" : [ 0.1 ],
-										"Spread" : [ 76.377952755905525 ],
-										"Tail" : [ 0.194881889763779 ],
-										"Time" : [ 0.1 ],
+										"Damp" : [ 0.015748031496063 ],
+										"Dry" : [ 0.0 ],
+										"Early" : [ 0.834645669291339 ],
+										"Regen" : [ 0.142857142857143 ],
+										"Size" : [ 50.000000000000007 ],
+										"Spread" : [ 0.0 ],
+										"Tail" : [ 0.598425196850394 ],
+										"Time" : [ 3095.238095238096776 ],
 										"bypass" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u362007871"
+									"varname" : "u942003860"
 								}
 
 							}
@@ -21408,7 +22048,7 @@
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 					}
 ,
-					"patching_rect" : [ 1247.304111455881866, 1194.607495903968811, 332.0, 116.0 ],
+					"patching_rect" : [ 1268.664162397384644, 1180.543021440505981, 332.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.121216416358948, 808.956319152607648, 332.0, 116.0 ],
 					"varname" : "bp.Gigaverb",
@@ -21423,7 +22063,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1572.513275146484375, 1493.506085975639508, 82.0, 22.0 ],
+					"patching_rect" : [ 1586.513275146484375, 1465.506085975639508, 82.0, 22.0 ],
 					"text" : "loadmess 110"
 				}
 
@@ -22340,11 +22980,11 @@
 										"Rate" : [ 0.030298725555525 ],
 										"Regen" : [ 0.626771653543308 ],
 										"Width" : [ 1021.44165660065039 ],
-										"bypass" : [ 0.0 ]
+										"bypass" : [ 1.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u247007870"
+									"varname" : "u660003859"
 								}
 
 							}
@@ -22735,28 +23375,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 1 ],
-					"source" : [ "obj-109", 1 ]
+					"destination" : [ "obj-124", 0 ],
+					"midpoints" : [ 895.540579541029729, 1417.741821646690369, 858.626471453419072, 1417.741821646690369, 858.626471453419072, 1312.741821646690369, 887.459804786752329, 1312.741821646690369 ],
+					"order" : 1,
+					"source" : [ "obj-110", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 1 ],
-					"source" : [ "obj-109", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-95", 0 ],
-					"source" : [ "obj-109", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
+					"destination" : [ "obj-98", 0 ],
+					"order" : 0,
 					"source" : [ "obj-110", 0 ]
 				}
 
@@ -22786,7 +23415,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
-					"midpoints" : [ 547.074604153633118, 1410.914892315864563, 510.160496066022461, 1410.914892315864563, 510.160496066022461, 1305.914892315864563, 538.993829399355718, 1305.914892315864563 ],
+					"midpoints" : [ 703.462663054466134, 1417.741821646690369, 666.548554966855477, 1417.741821646690369, 666.548554966855477, 1312.741821646690369, 695.381888300188734, 1312.741821646690369 ],
 					"order" : 1,
 					"source" : [ "obj-115", 0 ]
 				}
@@ -22815,7 +23444,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-111", 0 ],
+					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-117", 0 ]
 				}
 
@@ -22846,7 +23475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-122", 0 ],
-					"midpoints" : [ 735.129318992296703, 1410.914892315864563, 698.215210904686046, 1410.914892315864563, 698.215210904686046, 1305.914892315864563, 727.048544238019304, 1305.914892315864563 ],
+					"midpoints" : [ 506.93314394353979, 1417.741821646690369, 470.019035855929133, 1417.741821646690369, 470.019035855929133, 1312.741821646690369, 498.85236918926239, 1312.741821646690369 ],
 					"order" : 1,
 					"source" : [ "obj-121", 0 ]
 				}
@@ -22875,8 +23504,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
+					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-124", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"source" : [ "obj-124", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 0 ],
+					"source" : [ "obj-124", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-127", 0 ]
 				}
 
 			}
@@ -22891,6 +23548,43 @@
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-108", 0 ],
+					"source" : [ "obj-137", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-108", 0 ],
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-137", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"order" : 1,
+					"source" : [ "obj-138", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"order" : 0,
+					"source" : [ "obj-138", 0 ]
 				}
 
 			}
@@ -22920,6 +23614,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-153", 0 ],
+					"source" : [ "obj-144", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-151", 0 ],
 					"source" : [ "obj-146", 0 ]
 				}
@@ -22934,8 +23635,46 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-144", 0 ],
+					"order" : 0,
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-150", 0 ],
+					"midpoints" : [ 825.574604153633118, 773.414892315864563, 788.660496066022461, 773.414892315864563, 788.660496066022461, 668.414892315864563, 817.493829399355718, 668.414892315864563 ],
+					"order" : 1,
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"source" : [ "obj-150", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-147", 0 ],
+					"source" : [ "obj-150", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"source" : [ "obj-150", 0 ]
 				}
 
 			}
@@ -22955,6 +23694,130 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-138", 0 ],
+					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-154", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-161", 0 ],
+					"source" : [ "obj-156", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-156", 0 ],
+					"order" : 0,
+					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-160", 0 ],
+					"midpoints" : [ 1747.574604153633118, 1571.414892315864563, 1710.660496066022461, 1571.414892315864563, 1710.660496066022461, 1466.414892315864563, 1739.493829399355718, 1466.414892315864563 ],
+					"order" : 1,
+					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-157", 0 ],
+					"source" : [ "obj-160", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-158", 0 ],
+					"source" : [ "obj-160", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-159", 0 ],
+					"source" : [ "obj-160", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"source" : [ "obj-163", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-163", 0 ],
+					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-170", 0 ],
+					"source" : [ "obj-165", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-166", 0 ],
+					"source" : [ "obj-168", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-168", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-169", 0 ],
+					"source" : [ "obj-168", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-165", 0 ],
+					"order" : 0,
+					"source" : [ "obj-169", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-168", 0 ],
+					"order" : 1,
+					"source" : [ "obj-169", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"order" : 0,
 					"source" : [ "obj-17", 0 ]
@@ -22966,6 +23829,13 @@
 					"destination" : [ "obj-93", 0 ],
 					"order" : 1,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-170", 0 ]
 				}
 
 			}
@@ -22992,14 +23862,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
+					"destination" : [ "obj-154", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
+					"destination" : [ "obj-154", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -23021,14 +23891,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-96", 0 ],
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-22", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-96", 0 ],
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -23263,6 +24133,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-51", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-51", 1 ]
 				}
@@ -23271,7 +24148,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 1 ],
-					"source" : [ "obj-51", 5 ]
+					"source" : [ "obj-51", 6 ]
 				}
 
 			}
@@ -23370,7 +24247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
-					"midpoints" : [ 696.574604153633118, 467.414892315864563, 659.660496066022461, 467.414892315864563, 659.660496066022461, 362.414892315864563, 688.493829399355718, 362.414892315864563 ],
+					"midpoints" : [ 649.353201190630671, 737.134325742721558, 612.439093103020014, 737.134325742721558, 612.439093103020014, 632.134325742721558, 630.853201190630671, 632.134325742721558 ],
 					"order" : 1,
 					"source" : [ "obj-62", 0 ]
 				}
@@ -23441,7 +24318,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
+					"destination" : [ "obj-164", 0 ],
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -23557,7 +24434,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 0 ],
+					"destination" : [ "obj-137", 0 ],
 					"source" : [ "obj-88", 0 ]
 				}
 
@@ -23578,7 +24455,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 1 ],
+					"destination" : [ "obj-137", 1 ],
 					"order" : 0,
 					"source" : [ "obj-93", 2 ]
 				}
@@ -23586,24 +24463,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 0 ],
+					"destination" : [ "obj-137", 0 ],
 					"order" : 0,
-					"source" : [ "obj-93", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"order" : 2,
-					"source" : [ "obj-93", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"order" : 2,
 					"source" : [ "obj-93", 1 ]
 				}
 
@@ -23628,6 +24489,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-93", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"order" : 2,
+					"source" : [ "obj-93", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"order" : 2,
+					"source" : [ "obj-93", 1 ]
 				}
 
 			}
@@ -23664,30 +24541,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
-					"source" : [ "obj-97", 0 ]
+					"destination" : [ "obj-127", 0 ],
+					"source" : [ "obj-98", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 0 ],
+					"destination" : [ "obj-137", 0 ],
 					"source" : [ "obj-99", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-109" : [ "amxd~[1]", "amxd~[1]", 0 ],
-			"obj-110::obj-29" : [ "3", "3", 0 ],
-			"obj-110::obj-32" : [ "2", "2", 0 ],
-			"obj-110::obj-33" : [ "4", "4", 0 ],
-			"obj-110::obj-37" : [ "Mute", "Mute", 0 ],
-			"obj-110::obj-39" : [ "1[4]", "1", 0 ],
-			"obj-110::obj-49" : [ "MuteCh1", "MuteCh1", 0 ],
-			"obj-110::obj-58" : [ "MuteCh2", "MuteCh2", 0 ],
-			"obj-110::obj-64" : [ "MuteCh3", "MuteCh3", 0 ],
-			"obj-110::obj-70" : [ "MuteCh4", "MuteCh4", 0 ],
+			"obj-105" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-106" : [ "live.button[8]", "live.button", 0 ],
+			"obj-110" : [ "1[4]", "1", 0 ],
 			"obj-113" : [ "live.toggle[7]", "live.toggle", 0 ],
 			"obj-114" : [ "live.button[6]", "live.button", 0 ],
 			"obj-115" : [ "1[5]", "1", 0 ],
@@ -23697,10 +24567,24 @@
 			"obj-120" : [ "live.button[7]", "live.button", 0 ],
 			"obj-121" : [ "1[6]", "1", 0 ],
 			"obj-123" : [ "Main", "Main", 0 ],
+			"obj-127" : [ "Granular", "Granular", 0 ],
+			"obj-137" : [ "amxd~", "amxd~", 0 ],
 			"obj-142" : [ "live.button[2]", "live.button", 0 ],
 			"obj-143" : [ "1", "1", 0 ],
+			"obj-145" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-147" : [ "live.button[9]", "live.button", 0 ],
+			"obj-149" : [ "1[7]", "1", 0 ],
+			"obj-153" : [ "DelaysMax", "DelaysMax", 0 ],
 			"obj-155" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-157" : [ "live.toggle[11]", "live.toggle", 0 ],
+			"obj-158" : [ "live.button[10]", "live.button", 0 ],
+			"obj-159" : [ "1[8]", "1", 0 ],
+			"obj-161" : [ "Delays[1]", "Delays", 0 ],
+			"obj-166" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-167" : [ "live.button[11]", "live.button", 0 ],
+			"obj-169" : [ "1[9]", "1", 0 ],
 			"obj-17" : [ "Speed", "Speed", 0 ],
+			"obj-170" : [ "DelaysMin[1]", "DelaysMin", 0 ],
 			"obj-19::obj-23" : [ "bypass[2]", "bypass", 0 ],
 			"obj-19::obj-28" : [ "Size", "Size", 0 ],
 			"obj-19::obj-3" : [ "Regen[1]", "Regen", 0 ],
@@ -23768,7 +24652,7 @@
 			"obj-68::obj-39" : [ "gain", "gain", 0 ],
 			"obj-68::obj-7" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
 			"obj-68::obj-9" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-69" : [ "Regen[3]", "Regen", 0 ],
+			"obj-69" : [ "DelaysMin", "DelaysMin", 0 ],
 			"obj-71::obj-118" : [ "Mix", "Mix", 0 ],
 			"obj-71::obj-137" : [ "Feedback", "Feedback", 0 ],
 			"obj-71::obj-14" : [ "CV2[3]", "CV2", 0 ],
@@ -23799,10 +24683,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-110::obj-39" : 				{
-					"parameter_longname" : "1[4]"
-				}
-,
 				"obj-19::obj-23" : 				{
 					"parameter_longname" : "bypass[2]"
 				}
@@ -24044,29 +24924,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Granular-to-go.amxd.maxsnap",
-				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Granular-to-go.amxd",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Granular-to-go",
-				"type" : "amxd",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Audio Mixer.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Mixers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "iZotope Trash 2.maxsnap",
 				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Max DelayTaps.amxd.maxsnap",
+				"bootpath" : "D:/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Max DelayTaps.amxd",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps",
+				"type" : "amxd",
 				"implicit" : 1
 			}
 , 			{

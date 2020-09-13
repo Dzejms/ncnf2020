@@ -37,10 +37,15 @@ maxApi.addHandler('connect', (url) => {
     socket.on('video4', (value) => {
         maxApi.outlet('video4', value);
     });
+
+    socket.on('userCount', (val) => {
+        maxApi.outlet('userCount', val);
+    });
 });
 
 maxApi.addHandler('disconnect', () => {
     socket.close();
+    console.log("Disconnect");
 });
 
 maxApi.addHandler('message', (msg) => {
