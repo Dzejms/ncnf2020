@@ -13,33 +13,15 @@ io.on('connection', (socket) => {
     
     addUser();
 
-    socket.emit('userCount', userCount);
-
     socket.on('disconnect', () => {
         removeUser();
-        socket.emit('userCount', userCount);
-    });
-
-    socket.on('message', (msg) => {
-        console.log('Message received:', msg);
-        io.emit('message', msg);
-    });
-
-    socket.on('snap', () => {
-        console.log('Snap received');
-        socket.broadcast.emit('snap');
-    });
-
-    socket.on('crackle', () => {
-        console.log('Crackle received');
-        socket.broadcast.emit('crackle');
-    });
-
-    socket.on('pop', () => {
-        console.log('Pop received');
-        socket.broadcast.emit('pop');
     });
     
+    socket.on('sugarSpice', (value) => {
+        console.log('sugarSpice', value);
+        socket.broadcast.emit('sugarSpice', value);
+    });
+
     socket.on('video1', (value) => {
         console.log('video1', value);
         socket.broadcast.emit('video1', value);

@@ -10,16 +10,8 @@ maxApi.addHandler('connect', (url) => {
         maxApi.outlet('talkback', msg);
     });
 
-    socket.on('snap', () => {
-        maxApi.outlet('snap');
-    });
-
-    socket.on('crackle', () => {
-        maxApi.outlet('crackle');
-    });
-
-    socket.on('pop', () => {
-        maxApi.outlet('pop');
+    socket.on('sugarSpice', (value) => {
+        maxApi.outlet('sugarSpice', value);
     });
 
     socket.on('video1', (value) => {
@@ -37,17 +29,9 @@ maxApi.addHandler('connect', (url) => {
     socket.on('video4', (value) => {
         maxApi.outlet('video4', value);
     });
-
-    socket.on('userCount', (val) => {
-        maxApi.outlet('userCount', val);
-    });
 });
 
 maxApi.addHandler('disconnect', () => {
     socket.close();
     console.log("Disconnect");
 });
-
-maxApi.addHandler('message', (msg) => {
-    socket.emit('message', msg);
-})

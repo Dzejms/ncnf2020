@@ -4,7 +4,7 @@
     <title>--minusminus * NCNF2020</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-      /*
+      
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { 
         font-family: 'Montserrat', sans-serif; 
@@ -16,57 +16,188 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        height: 100vh;
+        /* width: 100vw;
+        height: 100vh; */
         font-size: 6rem;
+        
       }
-      /*
-      .form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-      button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-      */
-       #userCount {
-        border: 0;
-        text-align: center;
-        display: none;
-      } 
+
+      #container .display {
+        height: 10%;
+      }
+
+      #branding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 100vw;
+        height: 100vh; */
+        font-size: 6rem;
+        
+      }
+
+      #brand { 
+        height: 10%; 
+        margin-top: 100px;
+      }
+      
+      .form { background: #000; padding: 3px; width: 100%; }
+      button { background: rgb(241, 150, 14); border: none; padding: 10px; }
+      
 
       label {
         display: block;
+        height: 100px;
+        font-size: 6rem;
       }
+
       input { 
         padding: 10px; 
-        /*width: 90%; */
         margin-right: .5%; 
         display: block;
       }
       
-      .ping {
-        background-color: black;
-        color: white;
+      #sendMessageContainer {
+        margin: 50px;
       }
+
+      #messagebox {
+        font-size: 5rem;
+        width: 100%;
+        height: 100px;
+        margin: 10px;
+      }
+
+      #send {
+        width: 100%;
+        font-size: 6rem;
+        margin: 10px;
+      }
+
+      input[type="range"] {
+        width: 300px;
+        background: transparent;
+      }
+      /*###################################*/
+      /*###########Responsive Range########*/
+      /*###################################*/
+      /*##############Core Style###########*/
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+
+      input[type="range"]:focus {
+        outline: none;
+      }
+
+      input[type="range"]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+      /*#############Thumb##############*/
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 50px;
+        width: 50px;
+        background: rgb(241, 150, 14);
+        cursor: pointer;
+        margin-top: -12px;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        height: 50px;
+        width: 50px;
+        background: rgb(241, 150, 14);
+        cursor: pointer;
+      }
+
+      input[type="range"]::-ms-thumb {
+        height: 50px;
+        width: 50px;
+        background: rgb(241, 150, 14);
+        cursor: pointer;
+      }
+      /*#############Track##############*/
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+        background: #ccc;
+      }
+
+      input[type="range"]:active::-webkit-slider-runnable-track {
+        background: #d6d6d6;
+      }
+
+      input[type="range"]::-moz-range-track {
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+        background: #ccc;
+      }
+
+      input[type="range"]::-ms-track {
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+
+      input[type="range"]::-ms-fill-lower {
+        background: #ccc;
+      }
+
+      input[type="range"]:focus::-ms-fill-lower {
+        background: #ddd;
+      }
+
+      input[type="range"]::-ms-fill-upper {
+        background: #ccc;
+      }
+
+      input[type="range"]:focus::-ms-fill-upper {
+        background: #ddd;
+      }
+
     </style>
   </head>
   <body>
     <div id="container">
-      <div id="display"></div>
+      <div id="display">👋</div>
     </div>
     <div class="form">
-      <label for="messagebox">Message</label><input type="text" id="messagebox"/><button id="send">Send</button>
-      <!-- <label for="userCount">User Count</label><input type="text" id="userCount"/> -->
-      <label for="videoSlider1">Video 1</label><input type="range" id="videoSlider1" min="0" max="127" step="1" />
-      <label for="videoSlider2">Video 2</label><input type="range" id="videoSlider2" min="0" max="127" step="1" />
-      <label for="videoSlider3">Video 3</label><input type="range" id="videoSlider3" min="0" max="127" step="1" />
-      <label for="videoSlider4">Video 4</label><input type="range" id="videoSlider4" min="0" max="127" step="1" />
+      <div id="sendMessageContainer">
+        <label for="messagebox">Message</label><input type="text" id="messagebox"/><button id="send">Send</button>
+      </div>
+      <label for="videoSlider1">Sugar <----> Spice</label><input type="range" id="sugarSpice" min="0" max="127" step="1" />
+      <label for="videoSlider1">Horizontal</label><input type="range" id="videoSlider1" min="0" max="127" step="1" />
+      <label for="videoSlider2">Vertical</label><input type="range" id="videoSlider2" min="0" max="127" step="1" />
+      <label for="videoSlider3">Noise</label><input type="range" id="videoSlider3" min="0" max="127" step="1" />
+      <label for="videoSlider4">Feedback</label><input type="range" id="videoSlider4" min="0" max="127" step="1" />
+    </div>
+    <div id="branding">
+      <div id="brand">--minusminus</div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const socket = io();
-        const snapButton = document.querySelector('#snap');
-        const crackleButton = document.querySelector('#crackle');
-        const popButton = document.querySelector('#pop');
         const sendButton = document.querySelector('#send');
         const messageBox = document.querySelector('#messagebox');
+        const sugarSpiceSlider = document.querySelector("#sugarSpice");
         const videoSlider1 = document.querySelector("#videoSlider1");
         const videoSlider2 = document.querySelector("#videoSlider2");
         const videoSlider3 = document.querySelector("#videoSlider3");
@@ -78,6 +209,11 @@
           e.preventDefault();
           socket.emit('talkback', messageBox.value);
           messageBox.value = '';
+        });
+        
+        sugarSpiceSlider.addEventListener("input", function(e) {
+          e.preventDefault();
+          socket.emit('sugarSpice', sugarSpiceSlider.value);
         });
         
         videoSlider1.addEventListener("input", function(e) {
@@ -100,12 +236,12 @@
           socket.emit('video4', videoSlider4.value);
         });
 
-        socket.on('message', function(msg) {
+        socket.on('talkback', function(msg) {
           display.innerText = msg;
         });
 
-        socket.on('talkback', function(msg) {
-          display.innerText = msg;
+        socket.on('sugarSpice', function(val) {
+          sugarSpiceSlider.value = val;
         });
 
         socket.on('video1', function(val) {
@@ -122,31 +258,6 @@
 
         socket.on('video4', function(val) {
           videoSlider4.value = val;
-        });
-
-        // socket.on('userCount', function(val) {
-        //   userCount.value = val;
-        // });
-
-        socket.on('snap', function() {
-          snapButton.classList.add('ping');
-          setTimeout(() => {
-            snapButton.classList.remove('ping');
-          }, 1000);
-        });
-
-        socket.on('crackle', function() {
-          crackleButton.classList.add('ping');
-          setTimeout(() => {
-            crackleButton.classList.remove('ping');
-          }, 1000);
-        });
-
-        socket.on('pop', function() {
-          popButton.classList.add('ping');
-          setTimeout(() => {
-            popButton.classList.remove('ping');
-          }, 1000);
         });
 
       });
