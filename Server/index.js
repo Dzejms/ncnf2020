@@ -1,4 +1,5 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const port = process.env.port || 8080;
@@ -6,6 +7,8 @@ const port = process.env.port || 8080;
 app.get('/', (req, resp) => {
     resp.sendFile(__dirname + '/index.html');
 });
+
+app.use(express.static(__dirname + '/public'));
 
 let userCount = 0
 
