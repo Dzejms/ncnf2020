@@ -49,6 +49,16 @@ io.on('connection', (socket) => {
         console.log('Talkback', msg);
         socket.broadcast.emit('talkback', msg);
     });
+
+    socket.on('enablechaos', () => {
+        console.log("Enable Chaos");
+        socket.broadcast.emit('enablechaos');
+    });
+
+    socket.on('disablechaos', () => {
+        console.log("Disable Chaos");
+        socket.broadcast.emit('disablechaos');
+    });
 });
 
 const addUser = () => {

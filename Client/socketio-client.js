@@ -29,6 +29,18 @@ maxApi.addHandler('connect', (url) => {
     socket.on('video4', (value) => {
         maxApi.outlet('video4', value);
     });
+
+    socket.on('enablechaos', (value) => {
+        maxApi.outlet('enablechaos', value);
+    });
+});
+
+maxApi.addHandler('enablechaos', () => {
+    socket.emit('enablechaos');
+});
+
+maxApi.addHandler('disablechaos', () => {
+    socket.emit('disablechaos');
 });
 
 maxApi.addHandler('disconnect', () => {
