@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 2493.0, 1290.0 ],
+		"rect" : [ 34.0, 77.0, 2093.0, 1290.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,24 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.996078431372549, 0.650980392156863, 0.019607843137255, 0.580392156862745 ],
+					"fontsize" : 50.002555621867096,
+					"id" : "obj-100",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1050.0, -8.0, 623.0, 236.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 287.0, 19.0, 630.585371494293213, 236.0 ],
+					"text" : "go to ncnf.minusminusmusic.com right now to affect this performance",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-141",
 					"maxclass" : "button",
@@ -661,7 +679,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1656.0, 153.878793954849243, 111.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 986.0, 15.5, 233.0, 27.0 ],
+					"presentation_rect" : [ 1386.0, 82.335275769233704, 233.0, 27.0 ],
 					"text" : "Disable Chaos",
 					"textjustification" : 1
 				}
@@ -1679,7 +1697,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u061003209"
+									"varname" : "u754003218"
 								}
 
 							}
@@ -6023,7 +6041,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 519.0, 68.0, 82.0, 22.0 ],
-													"text" : "66"
+													"text" : "41"
 												}
 
 											}
@@ -8442,8 +8460,8 @@
 							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps/Max DelayTaps.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"DelaysMax" : 5000.0,
-									"DelaysMin" : 5000.0,
+									"DelaysMax" : 675.157018934936787,
+									"DelaysMin" : 675.157018934936787,
 									"Dry/Wet" : 50.0,
 									"Feedback" : 50.0,
 									"LevelsMax" : 100.0,
@@ -8480,8 +8498,8 @@
 										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max DelayTaps/Max DelayTaps.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
-												"DelaysMax" : 5000.0,
-												"DelaysMin" : 5000.0,
+												"DelaysMax" : 675.157018934936787,
+												"DelaysMin" : 675.157018934936787,
 												"Dry/Wet" : 50.0,
 												"Feedback" : 50.0,
 												"LevelsMax" : 100.0,
@@ -13381,7 +13399,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 519.0, 68.0, 82.0, 22.0 ],
-													"text" : "89"
+													"text" : "76"
 												}
 
 											}
@@ -15016,7 +15034,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 2071.463403701782227, 1210.988092064857483, 320.243902206420898, 323.109757900238037 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 583.585371494293213, 67.0, 739.414628505706787, 697.155275444269819 ]
+					"presentation_rect" : [ 921.585371494293213, 151.835275769233704, 866.688649869370238, 817.155275444269819 ]
 				}
 
 			}
@@ -15296,7 +15314,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1525.0, 153.878793954849243, 108.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 717.059685826301575, 15.5, 233.0, 27.0 ],
+					"presentation_rect" : [ 1117.059685826301575, 82.335275769233704, 233.0, 27.0 ],
 					"text" : "Enable Chaos",
 					"textjustification" : 1
 				}
@@ -17002,7 +17020,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 701.0, 180.0, 56.0, 23.0 ],
-									"restore" : [ 0.732283464566929 ],
+									"restore" : [ 0.755905511811023 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -17023,7 +17041,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 421.0, 180.0, 50.0, 23.0 ],
-									"restore" : [ 0.732283464566929 ],
+									"restore" : [ 0.370078740157483 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -18484,7 +18502,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 542.0, 194.928955000000002, 64.0, 23.0 ],
-									"restore" : [ 23.937007874015748 ],
+									"restore" : [ 36.220472440944881 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -21768,7 +21786,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 599.0, 159.0, 76.0, 23.0 ],
-									"restore" : [ 0.9 ],
+									"restore" : [ 0.5 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -21973,7 +21991,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 464.5, 159.0, 75.0, 23.0 ],
-									"restore" : [ 0.9 ],
+									"restore" : [ 0.8 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -23181,7 +23199,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1819.5, 943.0, 656.0, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 492.585371494293213, 769.0, 944.414628505706787, 91.0 ],
+					"presentation_rect" : [ 892.585371494293213, 980.835275769233704, 944.414628505706787, 91.0 ],
 					"text" : "NCNF2020",
 					"textjustification" : 1
 				}
@@ -23266,8 +23284,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -23387,7 +23403,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-36",
-					"items" : [ "2- Studio 26c MIDI In", ",", "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "Max DelayTaps.amxd" ],
+					"items" : [ "Ableton Push 2", ",", "MIDIIN2 (Ableton Push 2)", ",", "2- Studio 26c MIDI In", ",", "Max DelayTaps.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -23401,7 +23417,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-2",
-					"items" : [ "Microsoft GS Wavetable Synth", ",", "2- Studio 26c MIDI Out", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "Max DelayTaps.amxd" ],
+					"items" : [ "Microsoft GS Wavetable Synth", ",", "Ableton Push 2", ",", "MIDIOUT2 (Ableton Push 2)", ",", "2- Studio 26c MIDI Out", ",", "Max DelayTaps.amxd" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -28888,19 +28904,19 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 175.23620600000001, 372.0, 59.5, 22.0 ],
 									"restore" : 									{
-										"Damp" : [ 0.181102362204725 ],
+										"Damp" : [ 0.479527559055118 ],
 										"Dry" : [ 1.0 ],
-										"Early" : [ 0.155511811023622 ],
-										"Regen" : [ 0.817460317460317 ],
-										"Size" : [ 15.476190476190474 ],
-										"Spread" : [ 10.236220472441108 ],
-										"Tail" : [ 0.588582677165353 ],
-										"Time" : [ 2698.412698412697864 ],
+										"Early" : [ 0.25 ],
+										"Regen" : [ 0.01 ],
+										"Size" : [ 0.1 ],
+										"Spread" : [ 76.377952755905525 ],
+										"Tail" : [ 0.194881889763779 ],
+										"Time" : [ 0.1 ],
 										"bypass" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u836003179"
+									"varname" : "u323003188"
 								}
 
 							}
@@ -30205,7 +30221,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u843003178"
+									"varname" : "u844003187"
 								}
 
 							}
@@ -32943,8 +32959,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

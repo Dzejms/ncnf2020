@@ -63,7 +63,6 @@
         padding: 10px; 
       }
       
-
       label {
         display: block;
         height: 100px;
@@ -94,6 +93,11 @@
         margin: 10px;
       }
 
+      #pleasewait {
+        text-align: center;
+        font-size: 6rem;
+      }
+
     </style>
   </head>
   <body>
@@ -110,6 +114,9 @@
       <label for="videoSlider3">Noise</label><input type="range" id="videoSlider3" min="0" max="127" step="1" />
       <label for="videoSlider4">Feedback</label><input type="range" id="videoSlider4" min="0" max="127" step="1" />
     </div>
+    <div id="pleasewait">
+      <p>Please wait. You will take back control shortly.</p>
+    </div>
     <div id="branding">
       <div id="brand">--minusminus</div>
     </div>
@@ -118,6 +125,7 @@
       document.addEventListener('DOMContentLoaded', function() {
         const socket = io();
         const formElement = document.querySelector("#form");
+        const pleaseWaitElement = document.querySelector("#pleasewait");
         const sendButton = document.querySelector('#send');
         const messageBox = document.querySelector('#messagebox');
         const sugarSpiceSlider = document.querySelector("#sugarSpice");
@@ -185,10 +193,12 @@
 
         socket.on('enablechaos', function(val) {
           formElement.classList.remove("hide");
+          pleaseWaitElement.classList.add("hide");
         });
 
         socket.on('disablechaos', function(val) {
           formElement.classList.add("hide");
+          pleaseWaitElement.classList.remove("hide");
         });
 
       });
